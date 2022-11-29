@@ -28,6 +28,7 @@ CSF::createSection( $prefix, array(
       'id'     => 'opt-social',
       'type'   => 'group',
       'title'  => __('Social Link Group', 'ibrahimportfolio'),
+      'button_title'  => __('Add New Social Field', 'ibrahimportfolio'),
       'fields' => array(
         array(
           'id'        => 'opt-social-title',
@@ -87,36 +88,36 @@ CSF::createSection( $prefix, array(
   'fields' => array(
 
     array(
-      'id'     => 'opt-site-details',
+      'id'     => 'opt-hero-section',
       'type'   => 'fieldset',
-      'title'  => 'Site Name',
+      'title'  => 'Hero Section',
       'fields' => array(
         array(
-          'id'      => 'opt-siteicon',
-          'type'    => 'icon',
-          'title'   => 'Select Site Icon',
+          'id'      => 'opt-wlctitle',
+          'type'    => 'text',
+          'title'   => 'Welcome Title',
         ),
         array(
-          'id'      => 'opt-customsitename',
+          'id'      => 'opt-heroname',
           'type'    => 'text',
-          'title'   => 'Site Name',
+          'title'   => 'Name',
         ),
         array(
-          'id'      => 'opt-customurl',
+          'id'      => 'opt-herodesignation',
           'type'    => 'text',
-          'title'   => 'Site URL',
+          'title'   => 'Designation',
         ),
         array(
-          'id'      => 'opt-customtitle',
+          'id'      => 'opt-btntitle',
           'type'    => 'text',
-          'title'   => 'Site Title',
+          'title'   => 'Button Text',
         ),
       ),
       'default' => array(
-        'opt-siteicon'              => 'fas fa-hand-holding-medical',
-        'opt-customsitename'        => 'Medinova',
-        'opt-customurl'             => '#',
-        'opt-customtitle'             => 'MEDINOVA - Hospital Website Template',
+        'opt-wlctitle'              => 'Hello, this is',
+        'opt-heroname'              => 'Md. Ibrahim Khalil',
+        'opt-herodesignation'       => 'Full Stack WordPress Developer',
+        'opt-btntitle'              => 'My Resume',
       )
     ),
 

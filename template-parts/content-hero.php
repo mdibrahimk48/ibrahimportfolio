@@ -5,6 +5,7 @@
         <?php
             $config = get_option('_prefix_my_options');
             $string_converter_social = $config['opt-social'];
+            $string_converter_hero = $config['opt-hero-section'];
         ?>
             <?php
                 // Loop For Icon
