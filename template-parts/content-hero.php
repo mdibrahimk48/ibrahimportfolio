@@ -5,7 +5,7 @@
         <?php
             $config = get_option('_prefix_my_options');
             $string_converter_social = $config['opt-social'];
-            $string_converter_hero = $config['opt-hero-section'];
+            $string_converter_hero = $config['opt-hero'];
         ?>
             <?php
                 // Loop For Icon
@@ -25,10 +25,11 @@
             <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li> -->
         </ul>  
         <div class="header-content">
-            <h4 class="header-subtitle" >Hello, I am</h4>
-            <h1 class="header-title">John Doe</h1>
-            <h6 class="header-mono" >Frond end Designer | Developer</h6>
-            <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
+
+            <h4 class="header-subtitle" ><?php echo $string_converter_hero['opt-wlctitle']; ?></h4>
+            <h1 class="header-title"><?php echo $string_converter_hero['opt-heroname']; ?></h1>
+            <h6 class="header-mono" ><?php echo $string_converter_hero['opt-herodesignation']; ?></h6>
+            <button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i><?php echo $string_converter_hero['opt-btntitle']; ?></button>
         </div>
     </div>
     </header>

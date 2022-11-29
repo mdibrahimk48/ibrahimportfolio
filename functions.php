@@ -113,8 +113,8 @@ function ibrahimportfolio_scripts() {
 
 	// <!-- font icons -->
 	wp_enqueue_style( 'fontstyle', get_template_directory_uri() . '/assets/vendors/themify-icons/css/themify-icons.css', array(), null, 'all');
-	// <!-- Bootstrap + JohnDoe main styles -->
-	wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/assets/css/johndoe.css', array(), null, 'all');
+	// <!-- Bootstrap + Ik main styles -->
+	wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/assets/css/ik.css', array(), null, 'all');
 
 // Footer Script and Style
 
@@ -127,8 +127,8 @@ function ibrahimportfolio_scripts() {
 	wp_enqueue_script( 'bsisotope', get_template_directory_uri() . '/assets/vendors/isotope/isotope.pkgd.js', null, null, true);
 	// <!-- Google mpas -->
 	?> <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> <?php
-	// <!-- JohnDoe js -->
-	wp_enqueue_script( 'jdjs', get_template_directory_uri() . '/assets/js/johndoe.js', null, null, true);
+	// <!-- Ik js -->
+	wp_enqueue_script( 'ikjs', get_template_directory_uri() . '/assets/js/ik.js', null, null, true);
 
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

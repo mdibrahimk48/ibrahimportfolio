@@ -88,7 +88,7 @@ CSF::createSection( $prefix, array(
   'fields' => array(
 
     array(
-      'id'     => 'opt-hero-section',
+      'id'     => 'opt-hero',
       'type'   => 'fieldset',
       'title'  => 'Hero Section',
       'fields' => array(

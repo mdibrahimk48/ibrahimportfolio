@@ -16,10 +16,14 @@
 						</li>
 					</ul>
 					<ul class="navbar-nav brand">
+					<?php
+						$config = get_option('_prefix_my_options');
+						$string_converter_hero = $config['opt-hero'];
+					?>
 						<img src="<?php echo get_template_directory_uri() .'/assets/imgs/avatar.jpg'; ?>" alt="" class="brand-img">
 						<li class="brand-txt">
-							<h5 class="brand-title">John Doe</h5>
-							<div class="brand-subtitle">Web Designer | Developer</div>
+							<h5 class="brand-title"><?php echo $string_converter_hero['opt-heroname']; ?></h5>
+							<div class="brand-subtitle"><?php echo $string_converter_hero['opt-herodesignation']; ?></div>
 						</li>
 					</ul>
 					<ul class="navbar-nav ml-auto">
