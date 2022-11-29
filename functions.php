@@ -13,12 +13,13 @@ if ( ! defined( '_S_VERSION' ) ) {
 }
 
 function ibrahimportfolio_setup() {
-	/*
-		* Make theme available for translation.
-		* Translations can be filed in the /languages/ directory.
-		* If you're building a theme based on ibrahimportfolio, use a find and replace
-		* to change 'ibrahimportfolio' to the name of your theme in all the template files.
-		*/
+
+	//CodeStar Framework Required
+	require_once get_theme_file_path() .'/theme-options/codestar-framework.php';
+	require_once get_theme_file_path() .'/theme-options/custom-admin-options.php';
+	// require_once get_theme_file_path() .'/theme-options/samples/admin-options.php';
+
+
 	load_theme_textdomain( 'ibrahimportfolio', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.

@@ -14,58 +14,62 @@ CSF::createOptions( $prefix, array(
 ) );
 
 //
-// Create a section Toollbar
+// Create a section Social Icon
 //
 CSF::createSection( $prefix, array(
-  'title'  => 'Toolbar Options',
+  'title'  => 'Social Icon Options',
   'icon'   => 'fas fa-barcode',
   'fields' => array(
 
-    //
-    // A text field
-    //
-    array(
-      'id'    => 'opt-cell',
-      'type'  => 'text',
-      'title' => 'Cell No',
-    ),
-
-    //
-    // A validate email field
-    //
-    array(
-      'id'       => 'opt-validate-email',
-      'type'     => 'text',
-      'title'    => 'Email',
-      'subtitle' => 'This text field only allows validated email address.',
-      'default'  => 'info@domain.com',
-      'validate' => 'csf_validate_email', 
-    ),
-
 //
-// Field: group Toolbar
+// Field: group Social Icon
 //
-
     array(
       'id'     => 'opt-social',
       'type'   => 'group',
-      'title'  => __('Social Link', 'classicmedinova'),
-      'button_title'  => __('Add New Social Field', 'classicmedinova'),
+      'title'  => __('Social Link Group', 'ibrahimportfolio'),
       'fields' => array(
         array(
-          'id'    => 'opt-social-title',
-          'type'  => 'text',
-          'title'  => __('Social Link Title', 'classicmedinova'),
+          'id'        => 'opt-social-title',
+          'type'      => 'text',
+          'title'     => __('Social Link Title', 'ibrahimportfolio'),
         ),
         array(
           'id'    => 'opt-social-icon',
-          'type'  => 'icon',
-          'title'  => __('Social Link Icon', 'classicmedinova'),
+          'type'  => 'text',
+          'title'  => __('Social Link Icon Class', 'ibrahimportfolio'),
         ),
         array(
           'id'    => 'opt-social-url',
           'type'  => 'text',
-          'title'  => __('Social Link URL', 'classicmedinova'),
+          'title'  => __('Social Link URL', 'ibrahimportfolio'),
+        ),
+      ),
+      'default' => array(
+        array(
+          'opt-social-title'     => 'Facebook',
+          'opt-social-icon'      => 'ti-facebook',
+          'opt-social-url'       => '#',
+        ),
+        array(
+          'opt-social-title'     => 'Twitter',
+          'opt-social-icon'      => 'ti-twitter',
+          'opt-social-url'       => '#',
+        ),
+        array(
+          'opt-social-title'     => 'Google',
+          'opt-social-icon'      => 'ti-google',
+          'opt-social-url'       => '#',
+        ),
+        array(
+          'opt-social-title'     => 'Instagram',
+          'opt-social-icon'      => 'ti-instagram',
+          'opt-social-url'       => '#',
+        ),
+        array(
+          'opt-social-title'     => 'Github',
+          'opt-social-icon'      => 'ti-github',
+          'opt-social-url'       => '#',
         ),
       )
     ),
@@ -75,10 +79,10 @@ CSF::createSection( $prefix, array(
 
 
 //
-// Create Title & Name
+// Create Hero Section
 //
 CSF::createSection( $prefix, array(
-  'title'  => 'Site Name Options',
+  'title'  => 'Hero Section',
   'icon'   => 'fas fa-code',
   'fields' => array(
 
