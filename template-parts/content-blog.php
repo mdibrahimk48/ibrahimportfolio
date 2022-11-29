@@ -4,7 +4,7 @@
 				<div class="row">
 					<div class="blog-card">
 						<div class="img-holder">
-							<img src="assets/imgs/blog1.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+							<img src="<?php echo get_template_directory_uri() .'/assets/imgs/blog1.jpg'; ?>" alt="#">
 						</div>
 						<div class="content-holder">
 							<h6 class="title">Consectetur adipisicing elit</h6>
@@ -27,7 +27,7 @@
 					<!-- blog-card -->
 					<div class="blog-card">
 						<div class="img-holder">
-							<img src="assets/imgs/blog2.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+							<img src="<?php echo get_template_directory_uri() .'/assets/imgs/blog2.jpg'; ?>" alt="#">
 						</div>
 						<div class="content-holder">
 							<h6 class="title">Explicabo illo</h6>
@@ -46,7 +46,7 @@
 					<!-- blog-card -->
 					<div class="blog-card">
 						<div class="img-holder">
-							<img src="assets/imgs/blog3.jpg" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+							<img src="<?php echo get_template_directory_uri() .'/assets/imgs/blog3.jpg'; ?>" alt="#">
 						</div>
 						<div class="content-holder">
 							<h4 class="title">Porro Quisqua</h4>

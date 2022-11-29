@@ -54,6 +54,12 @@ get_header();
 		?>
 		<!-- End of portfolio section -->
 
+		<!-- Blog Section -->
+		<?php
+			get_template_part('template-parts/content', 'blog');
+		?>
+		<!-- End of Blog section -->
+
 
 
 		<div class="section contact" id="contact">
