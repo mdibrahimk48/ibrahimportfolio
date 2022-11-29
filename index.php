@@ -66,7 +66,6 @@ get_header();
 		?>
 		<!-- End of Contact section -->
 
-
 <?php
 	get_footer();
 ?>
