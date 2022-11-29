@@ -25,6 +25,9 @@ function ibrahimportfolio_setup() {
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'post-thumbnails' );
+	// Add theme support for selective refresh for widgets.
+	add_theme_support( 'customize-selective-refresh-widgets' );
+
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
@@ -58,14 +61,6 @@ function ibrahimportfolio_setup() {
 		)
 	);
 
-	// Add theme support for selective refresh for widgets.
-	add_theme_support( 'customize-selective-refresh-widgets' );
-
-	/**
-	 * Add support for core custom logo.
-	 *
-	 * @link https://codex.wordpress.org/Theme_Logo
-	 */
 	add_theme_support(
 		'custom-logo',
 		array(
@@ -113,11 +108,35 @@ function ibrahimportfolio_scripts() {
 
 	wp_enqueue_script( 'ibrahimportfolio-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
+// Header Script and Style
+
+	// <!-- font icons -->
+	wp_enqueue_style( 'fontstyle', get_template_directory_uri() . '/assets/vendors/themify-icons/css/themify-icons.css', array(), null, 'all');
+	// <!-- Bootstrap + JohnDoe main styles -->
+	wp_enqueue_style( 'stylesheet', get_template_directory_uri() . '/assets/css/johndoe.css', array(), null, 'all');
+
+// Footer Script and Style
+
+	// <!-- core  -->
+	wp_enqueue_script( 'mainjs', get_template_directory_uri() . '/assets/vendors/jquery/jquery-3.4.1.js', null, null, true);
+	wp_enqueue_script( 'mainbs', get_template_directory_uri() . '/assets/vendors/bootstrap/bootstrap.bundle.js', null, null, true);
+	// <!-- bootstrap 3 affix -->
+	wp_enqueue_script( 'bsaffix', get_template_directory_uri() . '/assets/vendors/bootstrap/bootstrap.affix.js', null, null, true);
+	// <!-- Isotope  -->
+	wp_enqueue_script( 'bsisotope', get_template_directory_uri() . '/assets/vendors/isotope/isotope.pkgd.js', null, null, true);
+	// <!-- Google mpas -->
+	?> <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> <?php
+	// <!-- JohnDoe js -->
+	wp_enqueue_script( 'jdjs', get_template_directory_uri() . '/assets/js/johndoe.js', null, null, true);
+
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'ibrahimportfolio_scripts' );
+
 
 require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-tags.php';
