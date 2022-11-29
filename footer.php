@@ -34,11 +34,7 @@
 		<!-- <script src="assets/vendors/isotope/isotope.pkgd.js"></script> -->
 		
 		<!-- Google mpas -->
-		<?php
-            wp_register_script( 'mapscript', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap' );
-            wp_enqueue_script('mapscript');
-		?>
-		<!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script> -->
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
 
 		<!-- JohnDoe js -->
 		<?php wp_enqueue_script( 'jdjs', get_template_directory_uri() . '/assets/js/johndoe.js', null, null, true); ?>
