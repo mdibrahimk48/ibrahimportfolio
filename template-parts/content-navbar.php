@@ -4,14 +4,12 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
 					<?php
 						wp_nav_menu(array(
 							'theme_location' 	=> 'primary',
-							'menu_class' 		=> 'nav-item'
+							'menu_class' 		=> 'navbar-nav mr-auto'
 						));
-                ?>
-				</ul>
+                	?>
 					<!-- <ul class="navbar-nav mr-auto">
 						<li class="nav-item">
 							<a href="#home" class="nav-link">Home</a>
