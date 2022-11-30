@@ -4,14 +4,14 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-					
-                <?php
-                    wp_nav_menu(array(
-                        'theme_location' 	=> 'primary',
-                        'menu_class' 		=> 'navbar-nav mr-auto'
-                    ));
+				<ul class="navbar-nav mr-auto">
+					<?php
+						wp_nav_menu(array(
+							'theme_location' 	=> 'primary',
+							'menu_class' 		=> 'nav-item'
+						));
                 ?>
-
+				</ul>
 					<!-- <ul class="navbar-nav mr-auto">
 						<li class="nav-item">
 							<a href="#home" class="nav-link">Home</a>
@@ -34,12 +34,6 @@
 							<div class="brand-subtitle"><?php echo $string_converter_hero['opt-herodesignation']; ?></div>
 						</li>
 					</ul>
-					<?php
-						wp_nav_menu(array(
-							'theme_location' 	=> 'secondary',
-							'menu_class' 		=> 'navbar-nav ml-auto'
-						));
-                	?>
 					<!-- <ul class="navbar-nav ml-auto">
 						<li class="nav-item">
 							<a href="#portfolio" class="nav-link">Portfolio</a>
