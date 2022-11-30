@@ -4,12 +4,14 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-					<?php
-						wp_nav_menu(array(
-							'theme_location' 	=> 'primary',
-							'menu_class' 		=> 'navbar-nav mr-auto'
-						));
-                	?>
+					<ul class="navbar-nav mr-auto">
+						<?php
+							wp_nav_menu(array(
+								'theme_location' 	=> 'primary',
+								'menu_class' 		=> 'navbar-nav mr-auto nav-item nav-link'
+							));
+						?>
+					</ul>
 					<!-- <ul class="navbar-nav mr-auto">
 						<li class="nav-item">
 							<a href="#home" class="nav-link">Home</a>
@@ -31,6 +33,14 @@
 							<h5 class="brand-title"><?php echo $string_converter_hero['opt-heroname']; ?></h5>
 							<div class="brand-subtitle"><?php echo $string_converter_hero['opt-herodesignation']; ?></div>
 						</li>
+					</ul>
+					<ul class="navbar-nav ml-auto">
+						<?php
+							wp_nav_menu(array(
+								'theme_location' 	=> 'secondary',
+								'menu_class' 		=> 'navbar-nav ml-auto nav-item nav-link'
+							));
+						?>
 					</ul>
 					<!-- <ul class="navbar-nav ml-auto">
 						<li class="nav-item">
