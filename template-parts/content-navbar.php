@@ -4,7 +4,15 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mr-auto">
+					
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' 	=> 'primary',
+                        'menu_class' 		=> 'navbar-nav mr-auto'
+                    ));
+                ?>
+
+					<!-- <ul class="navbar-nav mr-auto">
 						<li class="nav-item">
 							<a href="#home" class="nav-link">Home</a>
 						</li>
@@ -14,7 +22,7 @@
 						<li class="nav-item">
 							<a href="#resume" class="nav-link">Resume</a>
 						</li>
-					</ul>
+					</ul> -->
 					<ul class="navbar-nav brand">
 					<?php
 						$config = get_option('_prefix_my_options');
@@ -26,7 +34,13 @@
 							<div class="brand-subtitle"><?php echo $string_converter_hero['opt-herodesignation']; ?></div>
 						</li>
 					</ul>
-					<ul class="navbar-nav ml-auto">
+					<?php
+						wp_nav_menu(array(
+							'theme_location' 	=> 'secondary',
+							'menu_class' 		=> 'navbar-nav ml-auto'
+						));
+                	?>
+					<!-- <ul class="navbar-nav ml-auto">
 						<li class="nav-item">
 							<a href="#portfolio" class="nav-link">Portfolio</a>
 						</li>
@@ -36,7 +50,7 @@
 						<li class="nav-item last-item">
 							<a href="#contact" class="nav-link">Contact</a>
 						</li>
-					</ul>
+					</ul> -->
 				</div>
 			</div>
 	</nav>

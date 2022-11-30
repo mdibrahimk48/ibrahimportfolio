@@ -33,7 +33,8 @@ function ibrahimportfolio_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-1' => esc_html__( 'Primary', 'ibrahimportfolio' ),
+			'primary' => esc_html__( 'Primary', 'ibrahimportfolio' ),
+			'secondary' => esc_html__( 'Secondary', 'ibrahimportfolio' ),
 		)
 	);
 
@@ -136,7 +137,6 @@ function ibrahimportfolio_scripts() {
 }
 
 add_action( 'wp_enqueue_scripts', 'ibrahimportfolio_scripts' );
-
 
 require get_template_directory() . '/inc/custom-header.php';
 require get_template_directory() . '/inc/template-tags.php';
