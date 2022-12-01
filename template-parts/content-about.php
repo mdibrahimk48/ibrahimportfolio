@@ -5,7 +5,6 @@
 					$config = get_option('_prefix_my_options');
 					$string_converter_about = $config['opt-about-details'];
 				?>
-
 					<h3 class="font-weight-light"><?php echo $string_converter_about['opt-detailstitle']; ?></h3>
 					<span class="line mb-5"></span>
 					<h5 class="mb-3"><?php echo $string_converter_about['opt-detailsheading']; ?></h5>
