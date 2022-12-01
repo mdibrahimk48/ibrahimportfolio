@@ -112,6 +112,11 @@ CSF::createSection( $prefix, array(
           'type'    => 'text',
           'title'   => 'Button Text',
         ),
+        array(
+          'id'      => 'opt-heroimage2',
+          'type'    => 'media',
+          'title'   => 'Insert Hero Image',
+        ),
       ),
       'default' => array(
         'opt-wlctitle'              => 'Hello, this is',
