@@ -116,6 +116,7 @@ CSF::createSection( $prefix, array(
           'id'      => 'opt-heroimage2',
           'type'    => 'media',
           'title'   => 'Insert Hero Image',
+          'button_title' => 'Upload Image'
         ),
       ),
       'default' => array(
