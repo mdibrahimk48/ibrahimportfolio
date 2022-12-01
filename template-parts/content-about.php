@@ -1,11 +1,16 @@
 <div class="container-fluid">
 			<div id="about" class="row about-section">
 				<div class="col-lg-4 about-card">
-					<h3 class="font-weight-light">Who am I ?</h3>
+				<?php
+					$config = get_option('_prefix_my_options');
+					$string_converter_about = $config['opt-about-details'];
+				?>
+
+					<h3 class="font-weight-light"><?php echo $string_converter_about['opt-detailstitle']; ?></h3>
 					<span class="line mb-5"></span>
-					<h5 class="mb-3">A Web Designer / Developer Located In Our Lovely Earth</h5>
-					<p class="mt-20">Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, Qui deserunt consequatur fugit repellendusillo voluptas?</p>
-					<button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button>
+					<h5 class="mb-3"><?php echo $string_converter_about['opt-detailsheading']; ?></h5>
+					<p class="mt-20"><?php echo $string_converter_about['opt-detailsdesc']; ?></p>
+					<button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i><?php echo $string_converter_about['opt-detailsbuttontitle']; ?></button>
 				</div>
 				<div class="col-lg-4 about-card">
 					<h3 class="font-weight-light">Personal Info</h3>
@@ -20,7 +25,6 @@
 					<!-- Dynamic Social Fields -->
 					<ul class="social-icons pt-3">
 						<?php
-							$config = get_option('_prefix_my_options');
 							$string_converter_social = $config['opt-social'];
 								// Loop For Icon
 								if($string_converter_social){
