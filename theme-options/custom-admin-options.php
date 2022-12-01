@@ -253,20 +253,26 @@ CSF::createSection( $prefix, array(
         'button_title'  => __('Add New Area', 'ibrahimportfolio'),
         'fields' => array(
           array(
-            'id'        => 'opt-exp-title',
+            'id'        => 'opt-exp-icon-class',
             'type'      => 'text',
-            'title'     => __('Expertise Title', 'ibrahimportfolio'),
+            'title'     => __('Icon Class', 'ibrahimportfolio'),
           ),
           array(
-            'id'    => 'opt-info-details',
+            'id'    => 'opt-exp-heading',
             'type'  => 'text',
-            'title'  => __('Info Details', 'ibrahimportfolio'),
+            'title'  => __('Expertise Heading', 'ibrahimportfolio'),
+          ),
+          array(
+            'id'    => 'opt-exp-description',
+            'type'  => 'text',
+            'title'  => __('Expertise Description', 'ibrahimportfolio'),
           ),
         ),
         'default' => array(
           array(
-            'opt-info-title'        => 'Birthdate',
-            'opt-info-details'      => '04/10/1996',
+            'opt-exp-icon-class'        => 'ti-widget icon-lg',
+            'opt-exp-heading'           => 'UX Design',
+            'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
           ),
           array(
             'opt-info-title'        => 'Email',
