@@ -174,59 +174,65 @@ CSF::createSection( $prefix, array(
     ),
 
     //
-    // Field: group Social Icon
-    //
+    // Field: Create About Info & Group
     array(
-      'id'     => 'opt-social',
-      'type'   => 'group',
-      'title'  => __('Social Link Group', 'ibrahimportfolio'),
-      'button_title'  => __('Add New Social Field', 'ibrahimportfolio'),
+      'id'     => 'opt-about-info',
+      'type'   => 'fieldset',
+      'title'  => 'About Info',
       'fields' => array(
         array(
-          'id'        => 'opt-social-title',
-          'type'      => 'text',
-          'title'     => __('Social Link Title', 'ibrahimportfolio'),
+          'id'      => 'opt-aboutinfotitle',
+          'type'    => 'text',
+          'title'   => 'Personal Details Title',
+          'default' => 'Personal Details',
         ),
-        array(
-          'id'    => 'opt-social-icon',
-          'type'  => 'text',
-          'title'  => __('Social Link Icon Class', 'ibrahimportfolio'),
+      array(
+        'id'     => 'opt-personaldetails',
+        'type'   => 'group',
+        'title'  => __('Personal Details Group', 'ibrahimportfolio'),
+        'button_title'  => __('Add New Details', 'ibrahimportfolio'),
+        'fields' => array(
+          array(
+            'id'        => 'opt-social-title',
+            'type'      => 'text',
+            'title'     => __('Social Link Title', 'ibrahimportfolio'),
+          ),
+          array(
+            'id'    => 'opt-social-icon',
+            'type'  => 'text',
+            'title'  => __('Social Link Icon Class', 'ibrahimportfolio'),
+          ),
         ),
-        array(
-          'id'    => 'opt-social-url',
-          'type'  => 'text',
-          'title'  => __('Social Link URL', 'ibrahimportfolio'),
-        ),
-      ),
-      'default' => array(
-        array(
-          'opt-social-title'     => 'Facebook',
-          'opt-social-icon'      => 'ti-facebook',
-          'opt-social-url'       => '#',
-        ),
-        array(
-          'opt-social-title'     => 'Twitter',
-          'opt-social-icon'      => 'ti-twitter',
-          'opt-social-url'       => '#',
-        ),
-        array(
-          'opt-social-title'     => 'Google',
-          'opt-social-icon'      => 'ti-google',
-          'opt-social-url'       => '#',
-        ),
-        array(
-          'opt-social-title'     => 'Instagram',
-          'opt-social-icon'      => 'ti-instagram',
-          'opt-social-url'       => '#',
-        ),
-        array(
-          'opt-social-title'     => 'Github',
-          'opt-social-icon'      => 'ti-github',
-          'opt-social-url'       => '#',
-        ),
+        'default' => array(
+          array(
+            'opt-social-title'     => 'Facebook',
+            'opt-social-icon'      => 'ti-facebook',
+            'opt-social-url'       => '#',
+          ),
+          array(
+            'opt-social-title'     => 'Twitter',
+            'opt-social-icon'      => 'ti-twitter',
+            'opt-social-url'       => '#',
+          ),
+          array(
+            'opt-social-title'     => 'Google',
+            'opt-social-icon'      => 'ti-google',
+            'opt-social-url'       => '#',
+          ),
+          array(
+            'opt-social-title'     => 'Instagram',
+            'opt-social-icon'      => 'ti-instagram',
+            'opt-social-url'       => '#',
+          ),
+          array(
+            'opt-social-title'     => 'Github',
+            'opt-social-icon'      => 'ti-github',
+            'opt-social-url'       => '#',
+          ),
+        )
       )
     ),
-
+  ),
     //
     // Field: group About
     //
