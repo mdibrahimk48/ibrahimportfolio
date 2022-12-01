@@ -230,13 +230,13 @@ CSF::createSection( $prefix, array(
             ),
           )
         ),
-    ),
+    )
   ),
     //
     // Field: Expertise Area group 
     //
     array(
-      'id'     => 'opt-personal-info',
+      'id'     => 'opt-expertise-area',
       'type'   => 'fieldset',
       'title'  => 'Expertise Area',
       'fields' => array(
@@ -253,14 +253,14 @@ CSF::createSection( $prefix, array(
         'button_title'  => __('Add New Area', 'ibrahimportfolio'),
         'fields' => array(
           array(
-            'id'        => 'opt-exp-icon-class',
-            'type'      => 'text',
-            'title'     => __('Icon Class', 'ibrahimportfolio'),
-          ),
-          array(
             'id'    => 'opt-exp-heading',
             'type'  => 'text',
             'title'  => __('Expertise Heading', 'ibrahimportfolio'),
+          ),
+          array(
+            'id'        => 'opt-exp-icon-class',
+            'type'      => 'text',
+            'title'     => __('Icon Class', 'ibrahimportfolio'),
           ),
           array(
             'id'    => 'opt-exp-description',
@@ -270,21 +270,24 @@ CSF::createSection( $prefix, array(
         ),
         'default' => array(
           array(
-            'opt-exp-icon-class'        => 'ti-widget icon-lg',
             'opt-exp-heading'           => 'UX Design',
+            'opt-exp-icon-class'        => 'ti-widget icon-lg',
             'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
           ),
           array(
-            'opt-info-title'        => 'Email',
-            'opt-info-details'      => 'mdibrahimk48@gmail.com',
+            'opt-exp-heading'           => 'Web Development',
+            'opt-exp-icon-class'        => 'ti-paint-bucket icon-lg',
+            'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
           ),
           array(
-            'opt-info-title'        => 'Mobile',
-            'opt-info-details'      => '01737328916',
+            'opt-exp-heading'           => 'Digital Marketing',
+            'opt-exp-icon-class'        => 'ti-stats-up icon-lg',
+            'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
           ),
           array(
-            'opt-info-title'        => 'Skype',
-            'opt-info-details'      => 'ibrahim.khalil6446',
+            'opt-exp-heading'           => 'UI/UX Design',
+            'opt-exp-icon-class'        => 'ti-widget icon-lg',
+            'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
           ),
         )
       ),
@@ -292,7 +295,7 @@ CSF::createSection( $prefix, array(
   ),
 
   )
-) );
+));
 
 
 //
