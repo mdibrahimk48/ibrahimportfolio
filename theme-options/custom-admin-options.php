@@ -142,33 +142,88 @@ CSF::createSection( $prefix, array(
     array(
       'id'     => 'opt-about-details',
       'type'   => 'fieldset',
-      'title'  => 'About Section',
+      'title'  => 'About Info',
       'fields' => array(
         array(
-          'id'      => 'opt-aboutimage',
-          'type'    => 'media',
-          'title'   => 'Insert About Image',
-        ),
-        array(
-          'id'      => 'opt-abouttitle',
+          'id'      => 'opt-detailstitle',
           'type'    => 'text',
           'title'   => 'About Title',
         ),
         array(
-          'id'      => 'opt-aboutheading',
+          'id'      => 'opt-detailsheading',
           'type'    => 'text',
           'title'   => 'About Heading',
         ),
         array(
-          'id'      => 'opt-aboutdescription',
+          'id'      => 'opt-detailsdesc',
           'type'    => 'textarea',
           'title'   => 'About Description',
         ),
+        array(
+          'id'      => 'opt-detailsbuttontitle',
+          'type'    => 'text',
+          'title'   => 'About Button Title',
+        ),
       ),
       'default' => array(
-        'opt-abouttitle'              => 'ABOUT US',
-        'opt-aboutheading'            => 'Best Medical Care For Yourself and Your Family',
-        'opt-aboutdescription'        => 'Tempor erat elitr at rebum at at clita aliquyam consetetur. Diam dolor diam ipsum et, tempor voluptua sit consetetur sit. Aliquyam diam amet diam et eos sadipscing labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor consetetur takimata eirmod, dolores takimata consetetur invidunt magna dolores aliquyam dolores dolore. Amet erat amet et magna',
+        'opt-detailstitle'              => 'Who am I ?',
+        'opt-detailsheading'            => 'A Web Designer / Developer Located In Our Lovely Earth',
+        'opt-detailsdesc'               => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.sit amet, Qui deserunt consequatur fugit repellendusillo voluptas? Update',
+        'opt-detailsbuttontitle'        => 'Click to Download',
+      )
+    ),
+
+    //
+    // Field: group Social Icon
+    //
+    array(
+      'id'     => 'opt-social',
+      'type'   => 'group',
+      'title'  => __('Social Link Group', 'ibrahimportfolio'),
+      'button_title'  => __('Add New Social Field', 'ibrahimportfolio'),
+      'fields' => array(
+        array(
+          'id'        => 'opt-social-title',
+          'type'      => 'text',
+          'title'     => __('Social Link Title', 'ibrahimportfolio'),
+        ),
+        array(
+          'id'    => 'opt-social-icon',
+          'type'  => 'text',
+          'title'  => __('Social Link Icon Class', 'ibrahimportfolio'),
+        ),
+        array(
+          'id'    => 'opt-social-url',
+          'type'  => 'text',
+          'title'  => __('Social Link URL', 'ibrahimportfolio'),
+        ),
+      ),
+      'default' => array(
+        array(
+          'opt-social-title'     => 'Facebook',
+          'opt-social-icon'      => 'ti-facebook',
+          'opt-social-url'       => '#',
+        ),
+        array(
+          'opt-social-title'     => 'Twitter',
+          'opt-social-icon'      => 'ti-twitter',
+          'opt-social-url'       => '#',
+        ),
+        array(
+          'opt-social-title'     => 'Google',
+          'opt-social-icon'      => 'ti-google',
+          'opt-social-url'       => '#',
+        ),
+        array(
+          'opt-social-title'     => 'Instagram',
+          'opt-social-icon'      => 'ti-instagram',
+          'opt-social-url'       => '#',
+        ),
+        array(
+          'opt-social-title'     => 'Github',
+          'opt-social-icon'      => 'ti-github',
+          'opt-social-url'       => '#',
+        ),
       )
     ),
 
