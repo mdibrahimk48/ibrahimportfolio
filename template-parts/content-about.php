@@ -12,7 +12,10 @@
 					<button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i><?php echo $string_converter_about['opt-detailsbuttontitle']; ?></button>
 				</div>
 				<div class="col-lg-4 about-card">
-					<h3 class="font-weight-light">Personal Info</h3>
+					<?php
+
+					?>
+					<h3 class="font-weight-light">.......</h3>
 					<span class="line mb-5"></span>
 					<ul class="mt40 info list-unstyled">
 						<li><span>Birthdate</span> : 09/13/1996</li>

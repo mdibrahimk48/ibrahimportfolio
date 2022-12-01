@@ -205,61 +205,85 @@ CSF::createSection( $prefix, array(
           ),
           'default' => array(
             array(
-              'opt-info-title'        => 'Facebook',
-              'opt-info-details'      => 'ti-facebook',
+              'opt-info-title'        => 'Birthdate',
+              'opt-info-details'      => '04/10/1996',
             ),
             array(
-              'opt-info-title'        => 'Twitter',
-              'opt-info-details'      => 'ti-twitter',
+              'opt-info-title'        => 'Email',
+              'opt-info-details'      => 'mdibrahimk48@gmail.com',
             ),
             array(
-              'opt-info-title'        => 'Google',
-              'opt-info-details'      => 'ti-google',
+              'opt-info-title'        => 'Mobile',
+              'opt-info-details'      => '01737328916',
             ),
             array(
-              'opt-info-title'        => 'Instagram',
-              'opt-info-details'      => 'ti-instagram',
+              'opt-info-title'        => 'Skype',
+              'opt-info-details'      => 'ibrahim.khalil6446',
             ),
             array(
               'opt-info-title'        => 'Github',
-              'opt-info-details'      => 'ti-github',
+              'opt-info-details'      => 'mdibrahimk48',
+            ),
+            array(
+              'opt-info-title'        => 'Address',
+              'opt-info-details'      => 'Basudebpur, Godagari, Rajshahi',
             ),
           )
-        )
+        ),
     ),
   ),
     //
-    // Field: group About
+    // Field: Expertise Area group 
     //
-
     array(
-      'id'     => 'opt-aboutservicefield',
-      'type'   => 'group',
-      'title'  => __('Social Link', 'classicmedinova'),
-      'button_title'  => __('Add New Social Field', 'classicmedinova'),
+      'id'     => 'opt-personal-info',
+      'type'   => 'fieldset',
+      'title'  => 'Expertise Area',
       'fields' => array(
         array(
-          'id'    => 'opt-about-service-title',
-          'type'  => 'text',
-          'title'  => __('Field No', 'classicmedinova'),
+          'id'      => 'opt-personalinfotitle',
+          'type'    => 'text',
+          'title'   => 'Expertise Area Title',
+          'default' => 'My Expertise',
         ),
-        array(
-          'id'    => 'opt-about-icon-class',
-          'type'  => 'text',
-          'title'  => __('Icon Class', 'classicmedinova'),
+      array(
+        'id'     => 'opt-expertise',
+        'type'   => 'group',
+        'title'  => __('Expertise Area Group', 'ibrahimportfolio'),
+        'button_title'  => __('Add New Area', 'ibrahimportfolio'),
+        'fields' => array(
+          array(
+            'id'        => 'opt-exp-title',
+            'type'      => 'text',
+            'title'     => __('Expertise Title', 'ibrahimportfolio'),
+          ),
+          array(
+            'id'    => 'opt-info-details',
+            'type'  => 'text',
+            'title'  => __('Info Details', 'ibrahimportfolio'),
+          ),
         ),
-        array(
-          'id'    => 'opt-about-title1',
-          'type'  => 'text',
-          'title'  => __('Title 1', 'classicmedinova'),
-        ),
-        array(
-          'id'    => 'opt-about-title2',
-          'type'  => 'text',
-          'title'  => __('Title 2', 'classicmedinova'),
-        ),
-      )
-    ),
+        'default' => array(
+          array(
+            'opt-info-title'        => 'Birthdate',
+            'opt-info-details'      => '04/10/1996',
+          ),
+          array(
+            'opt-info-title'        => 'Email',
+            'opt-info-details'      => 'mdibrahimk48@gmail.com',
+          ),
+          array(
+            'opt-info-title'        => 'Mobile',
+            'opt-info-details'      => '01737328916',
+          ),
+          array(
+            'opt-info-title'        => 'Skype',
+            'opt-info-details'      => 'ibrahim.khalil6446',
+          ),
+        )
+      ),
+    )
+  ),
 
   )
 ) );
