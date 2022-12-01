@@ -17,13 +17,28 @@
 						<li><span>Skype</span> : John_Doe </li>
 						<li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li>
 					</ul>
+					<!-- Dynamic Social Fields -->
 					<ul class="social-icons pt-3">
+						<?php
+							$config = get_option('_prefix_my_options');
+							$string_converter_social = $config['opt-social'];
+								// Loop For Icon
+								if($string_converter_social){
+									foreach($string_converter_social as $social_field){
+										?>
+											<li class="social-item"><a class="social-link" href="<?php echo $social_field['opt-social-url'];?>"><i class="<?php echo $social_field['opt-social-icon'];?>" aria-hidden="true"></i></a></li>
+										<?php
+									}
+								}
+						?>
+					</ul>  
+					<!-- <ul class="social-icons pt-3">
 						<li class="social-item"><a class="social-link" href="#"><i class="ti-facebook" aria-hidden="true"></i></a></li>
 						<li class="social-item"><a class="social-link" href="#"><i class="ti-twitter" aria-hidden="true"></i></a></li>
 						<li class="social-item"><a class="social-link" href="#"><i class="ti-google" aria-hidden="true"></i></a></li>
 						<li class="social-item"><a class="social-link" href="#"><i class="ti-instagram" aria-hidden="true"></i></a></li>
 						<li class="social-item"><a class="social-link" href="#"><i class="ti-github" aria-hidden="true"></i></a></li>
-					</ul>  
+					</ul>   -->
 				</div>
 				<div class="col-lg-4 about-card">
 					<h3 class="font-weight-light">My Expertise</h3>

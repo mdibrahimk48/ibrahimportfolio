@@ -25,7 +25,6 @@
             <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-github" aria-hidden="true"></i></a></li> -->
         </ul>  
         <div class="header-content">
-
             <h4 class="header-subtitle" ><?php echo $string_converter_hero['opt-wlctitle']; ?></h4>
             <h1 class="header-title"><?php echo $string_converter_hero['opt-heroname']; ?></h1>
             <h6 class="header-mono" ><?php echo $string_converter_hero['opt-herodesignation']; ?></h6>
