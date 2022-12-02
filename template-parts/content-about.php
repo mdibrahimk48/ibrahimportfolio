@@ -23,6 +23,8 @@
 						<?php
 						if($string_converter_personal){
 							foreach($string_converter_personal as $single_array_convert){
+								$get_array_value = $config('opt-personalinfogroup');
+								var_dump($get_array_value);
 								?>
 									<li><span><?php echo $string_converter_personal['opt-info-title']; ?></span> : <?php echo $string_converter_personal['opt-info-details']; ?></li>
 								<?php
