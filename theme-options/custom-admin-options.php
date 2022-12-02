@@ -220,7 +220,7 @@ CSF::createSection( $prefix, array(
               'id'    => 'opt-info-details',
               'type'  => 'text',
               'title'  => __('Info Details', 'ibrahimportfolio'),
-            ),
+            )
           ),
           'default' => array(
             array(

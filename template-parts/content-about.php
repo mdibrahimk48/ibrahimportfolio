@@ -14,16 +14,27 @@
 				<div class="col-lg-4 about-card">
 					<?php
 						$string_converter_personal = $config['opt-personal-info'];
-						var_dump($string_converter_personal);
+						// var_dump($string_converter_personal);
 					?>
 					<h3 class="font-weight-light"><?php echo $string_converter_personal['opt-personalinfotitle']; ?></h3>
 					<span class="line mb-5"></span>
+
 					<ul class="mt40 info list-unstyled">
-						<li><span>Birthdate</span> : 09/13/1996</li>
-						<li><span>Email</span> : info@website.com</li>
+						<?php
+						if($string_converter_personal){
+							foreach($string_converter_personal as $single_array_convert){
+								?>
+									<li><span><?php echo $string_converter_personal['opt-info-title']; ?></span> : <?php echo $string_converter_personal['opt-info-details']; ?></li>
+								<?php
+								var_dump($single_array_convert);
+							}
+						}
+						?>
+						<!-- <li><span>Birthdate</span> : 09/13/1996</li> -->
+						<!-- <li><span>Email</span> : info@website.com</li>
 						<li><span>Phone</span> : + (123) 456-7890</li>
 						<li><span>Skype</span> : John_Doe </li>
-						<li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li>
+						<li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li> -->
 					</ul>
 					<!-- Dynamic Social Fields -->
 					<ul class="social-icons pt-3">
