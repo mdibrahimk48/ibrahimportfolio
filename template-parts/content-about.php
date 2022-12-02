@@ -14,20 +14,20 @@
 				<div class="col-lg-4 about-card">
 					<?php
 						$string_converter_personal = $config['opt-personal-info'];
-						var_dump($string_converter_personal);
+						// var_dump($string_converter_personal);
 					?>
 					<h3 class="font-weight-light"><?php echo $string_converter_personal['opt-personalinfotitle']; ?></h3>
 					<span class="line mb-5"></span>
 
+					<!-- Dynamic Personal Details Fields -->
 					<ul class="mt40 info list-unstyled">
 						<?php
-						if($string_converter_personal){
-							foreach($string_converter_personal as $single_array_convert){
-
+						if($string_converter_personal['opt-personalinfogroup']){
+							foreach($string_converter_personal['opt-personalinfogroup'] as $single_array_convert){
 								?>
-
+									<li><span><?php echo $single_array_convert['opt-info-title']; ?></span> : <?php echo $single_array_convert['opt-info-details']; ?></li>
 								<?php
-								var_dump($single_array_convert);
+								// var_dump($single_array_convert);
 							}
 						}
 						?>
@@ -37,6 +37,8 @@
 						<li><span>Skype</span> : John_Doe </li>
 						<li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li> -->
 					</ul>
+
+
 					<!-- Dynamic Social Fields -->
 					<ul class="social-icons pt-3">
 						<?php
