@@ -14,7 +14,7 @@
 				<div class="col-lg-4 about-card">
 					<?php
 						$string_converter_personal = $config['opt-personal-info'];
-						// var_dump($string_converter_personal);
+						var_dump($string_converter_personal);
 					?>
 					<h3 class="font-weight-light"><?php echo $string_converter_personal['opt-personalinfotitle']; ?></h3>
 					<span class="line mb-5"></span>
@@ -23,10 +23,9 @@
 						<?php
 						if($string_converter_personal){
 							foreach($string_converter_personal as $single_array_convert){
-								$get_array_value = $config('opt-personalinfogroup');
-								var_dump($get_array_value);
+
 								?>
-									<li><span><?php echo $string_converter_personal['opt-info-title']; ?></span> : <?php echo $string_converter_personal['opt-info-details']; ?></li>
+
 								<?php
 								var_dump($single_array_convert);
 							}
