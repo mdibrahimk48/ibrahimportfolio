@@ -178,22 +178,6 @@ CSF::createSection( $prefix, array(
     // Field: Create Personal Info & Group
     //
 
-    // array(
-    //   'id'     => 'opt-personal-info',
-    //   'type'   => 'fieldset',
-    //   'title'  => 'Personal Info',
-    //   'fields' => array(
-    //     array(
-    //       'id'      => 'opt-personalinfotitle',
-    //       'type'    => 'text',
-    //       'title'   => 'Personal Info Title',
-    //       'default' => 'Personal Details',
-    //     ),
-    //   )
-    // ),
-
-    //
-    // Field: Create Personal Info & Group
     array(
       'id'     => 'opt-personal-info',
       'type'   => 'fieldset',
@@ -251,67 +235,70 @@ CSF::createSection( $prefix, array(
         ),
       )
     ),
+
+
     //
     // Field: Expertise Area group 
     //
-  //   array(
-  //     'id'     => 'opt-expertise-area',
-  //     'type'   => 'fieldset',
-  //     'title'  => 'Expertise Area',
-  //     'fields' => array(
-  //       array(
-  //         'id'      => 'opt-personalinfotitle',
-  //         'type'    => 'text',
-  //         'title'   => 'Expertise Area Title',
-  //         'default' => 'My Expertise',
-  //       ),
-  //     array(
-  //       'id'     => 'opt-expertise',
-  //       'type'   => 'group',
-  //       'title'  => __('Expertise Area Group', 'ibrahimportfolio'),
-  //       'button_title'  => __('Add New Area', 'ibrahimportfolio'),
-  //       'fields' => array(
-  //         array(
-  //           'id'    => 'opt-exp-heading',
-  //           'type'  => 'text',
-  //           'title'  => __('Expertise Heading', 'ibrahimportfolio'),
-  //         ),
-  //         array(
-  //           'id'        => 'opt-exp-icon-class',
-  //           'type'      => 'text',
-  //           'title'     => __('Icon Class', 'ibrahimportfolio'),
-  //         ),
-  //         array(
-  //           'id'    => 'opt-exp-description',
-  //           'type'  => 'text',
-  //           'title'  => __('Expertise Description', 'ibrahimportfolio'),
-  //         ),
-  //       ),
-  //       'default' => array(
-  //         array(
-  //           'opt-exp-heading'           => 'UX Design',
-  //           'opt-exp-icon-class'        => 'ti-widget icon-lg',
-  //           'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
-  //         ),
-  //         array(
-  //           'opt-exp-heading'           => 'Web Development',
-  //           'opt-exp-icon-class'        => 'ti-paint-bucket icon-lg',
-  //           'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
-  //         ),
-  //         array(
-  //           'opt-exp-heading'           => 'Digital Marketing',
-  //           'opt-exp-icon-class'        => 'ti-stats-up icon-lg',
-  //           'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
-  //         ),
-  //         array(
-  //           'opt-exp-heading'           => 'UI/UX Design',
-  //           'opt-exp-icon-class'        => 'ti-widget icon-lg',
-  //           'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
-  //         ),
-  //       )
-  //     ),
-  //   )
-  // ),
+
+    array(
+      'id'     => 'opt-expertise-area',
+      'type'   => 'fieldset',
+      'title'  => 'Expertise Area',
+      'fields' => array(
+          array(
+            'id'      => 'opt-personalinfotitle',
+            'type'    => 'text',
+            'title'   => 'Expertise Area Title',
+            'default' => 'My Expertise',
+          ),
+        array(
+          'id'     => 'opt-expertise',
+          'type'   => 'group',
+          'title'  => __('Expertise Area Group', 'ibrahimportfolio'),
+          'button_title'  => __('Add New Area', 'ibrahimportfolio'),
+          'fields' => array(
+            array(
+              'id'    => 'opt-exp-heading',
+              'type'  => 'text',
+              'title'  => __('Expertise Heading', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'        => 'opt-exp-icon-class',
+              'type'      => 'text',
+              'title'     => __('Icon Class', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'    => 'opt-exp-description',
+              'type'  => 'text',
+              'title'  => __('Expertise Description', 'ibrahimportfolio'),
+            ),
+          ),
+          'default' => array(
+            array(
+              'opt-exp-heading'           => 'UX Design',
+              'opt-exp-icon-class'        => 'ti-widget icon-lg',
+              'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
+            ),
+            array(
+              'opt-exp-heading'           => 'Web Development',
+              'opt-exp-icon-class'        => 'ti-paint-bucket icon-lg',
+              'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
+            ),
+            array(
+              'opt-exp-heading'           => 'Digital Marketing',
+              'opt-exp-icon-class'        => 'ti-stats-up icon-lg',
+              'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
+            ),
+            array(
+              'opt-exp-heading'           => 'UI/UX Design',
+              'opt-exp-icon-class'        => 'ti-widget icon-lg',
+              'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
+            ),
+          )
+        ),
+      )
+    ),
 
   )
 ));
