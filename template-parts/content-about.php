@@ -64,19 +64,32 @@
 				<div class="col-lg-4 about-card">
 					<?php
 						$string_converter_expertise = $config['opt-expertise-area'];
-						var_dump($string_converter_expertise);
+						//var_dump($string_converter_expertise);
 					?>
-					<h3 class="font-weight-light">My Expertise</h3>
+					<h3 class="font-weight-light"><?php echo $string_converter_expertise['opt-expertisetitle']; ?></h3>
 					<span class="line mb-5"></span>
 					<div class="row">
-						<div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-						<div class="col-10 ml-auto mr-3">
-							<h6>UX Design</h6>
-							<p class="subtitle"> exercitat Repellendus,  corrupt.</p>
-							<hr>
-						</div>
+
+					<!-- Dynamic Personal Details Fields -->
+						<?php
+						if($string_converter_expertise['opt-expertise']){
+							foreach($string_converter_expertise['opt-expertise'] as $single_array_convert_expertise){
+								// var_dump($single_array_convert_expertise);
+								?>
+									<div class="col-1 text-danger pt-1"><i class="<?php echo $single_array_convert_expertise['opt-exp-icon-class']; ?>"></i></div>
+									<div class="col-10 ml-auto mr-3">
+										<h6><?php echo $single_array_convert_expertise['opt-exp-heading']; ?></h6>
+										<p class="subtitle"><?php echo $single_array_convert_expertise['opt-exp-description']; ?></p>
+										<hr>
+									</div>
+								<?php
+								// var_dump($single_array_convert);
+							}
+						}
+						?>
+
 					</div>
-					<div class="row">
+					<!-- <div class="row">
 						<div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
 						<div class="col-10 ml-auto mr-3">
 							<h6>Web Development</h6>
@@ -91,7 +104,7 @@
 							<p class="subtitle">voluptate commodi illo voluptatib.</p>
 							<hr>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 		</div>

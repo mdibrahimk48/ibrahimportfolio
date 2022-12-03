@@ -247,7 +247,7 @@ CSF::createSection( $prefix, array(
       'title'  => 'Expertise Area',
       'fields' => array(
           array(
-            'id'      => 'opt-personalinfotitle',
+            'id'      => 'opt-expertisetitle',
             'type'    => 'text',
             'title'   => 'Expertise Area Title',
             'default' => 'My Expertise',
