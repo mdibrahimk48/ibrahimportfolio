@@ -333,9 +333,9 @@ CSF::createSection( $prefix, array(
     //
 
     array(
-      'id'     => 'opt-expertise-area',
+      'id'     => 'opt-heading-title-expertise',
       'type'   => 'fieldset',
-      'title'  => 'Expertise Area',
+      'title'  => 'Expertise Area Session',
       'fields' => array(
           array(
             'id'      => 'opt-expertisetitle',
@@ -344,32 +344,38 @@ CSF::createSection( $prefix, array(
             'default' => 'My Expertise',
           ),
         array(
-          'id'     => 'opt-expertise',
+          'id'     => 'opt-expertise-group',
           'type'   => 'group',
-          'title'  => __('Expertise Area Group', 'ibrahimportfolio'),
+          'title'  => __('Expertise Group Area', 'ibrahimportfolio'),
           'button_title'  => __('Add New Area', 'ibrahimportfolio'),
           'fields' => array(
             array(
-              'id'    => 'opt-exp-heading',
+              'id'    => 'opt-exp-heading-title',
               'type'  => 'text',
-              'title'  => __('Expertise Heading', 'ibrahimportfolio'),
+              'title'  => __('Expertise Heading Title', 'ibrahimportfolio'),
             ),
             array(
-              'id'        => 'opt-exp-icon-class',
+              'id'        => 'opt-exp-duration',
               'type'      => 'text',
-              'title'     => __('Icon Class', 'ibrahimportfolio'),
+              'title'     => __('Working Duration', 'ibrahimportfolio'),
             ),
             array(
-              'id'    => 'opt-exp-description',
+              'id'        => 'opt-exp-designation',
+              'type'      => 'text',
+              'title'     => __('Designation/Role', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'    => 'opt-exp-description-part',
               'type'  => 'text',
               'title'  => __('Expertise Description', 'ibrahimportfolio'),
             ),
           ),
           'default' => array(
             array(
-              'opt-exp-heading'           => 'UX Design',
-              'opt-exp-icon-class'        => 'ti-widget icon-lg',
-              'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
+              'opt-exp-heading-title'           => 'Expertise',
+              'opt-exp-duration'                => 'ti-widget icon-lg',
+              'opt-exp-designation'             => 'ti-widget icon-lg',
+              'opt-exp-description-part'        => 'exercitat Repellendus,  corrupt.',
             ),
             array(
               'opt-exp-heading'           => 'Web Development',
