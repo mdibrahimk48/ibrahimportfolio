@@ -63,6 +63,8 @@
 				</div>
 				<div class="col-lg-4 about-card">
 					<?php
+						$string_converter_expertise = $config['opt-expertise-area'];
+						var_dump($string_converter_expertise);
 					?>
 					<h3 class="font-weight-light">My Expertise</h3>
 					<span class="line mb-5"></span>
