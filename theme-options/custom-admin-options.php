@@ -340,8 +340,14 @@ CSF::createSection( $prefix, array(
           array(
             'id'      => 'opt-expertisetitle',
             'type'    => 'text',
-            'title'   => 'Expertise Area Title',
+            'title'   => 'Main Area Title',
             'default' => 'My Expertise',
+          ),
+          array(
+            'id'      => 'opt-exp-heading-title',
+            'type'    => 'text',
+            'title'   => 'Section Area Title',
+            'default' => 'Expertise',
           ),
         array(
           'id'     => 'opt-expertise-group',
@@ -349,11 +355,6 @@ CSF::createSection( $prefix, array(
           'title'  => __('Expertise Group Area', 'ibrahimportfolio'),
           'button_title'  => __('Add New Area', 'ibrahimportfolio'),
           'fields' => array(
-            array(
-              'id'    => 'opt-exp-heading-title',
-              'type'  => 'text',
-              'title'  => __('Expertise Heading Title', 'ibrahimportfolio'),
-            ),
             array(
               'id'        => 'opt-exp-duration',
               'type'      => 'text',
@@ -372,25 +373,19 @@ CSF::createSection( $prefix, array(
           ),
           'default' => array(
             array(
-              'opt-exp-heading-title'           => 'Expertise',
-              'opt-exp-duration'                => 'ti-widget icon-lg',
-              'opt-exp-designation'             => 'ti-widget icon-lg',
-              'opt-exp-description-part'        => 'exercitat Repellendus,  corrupt.',
+              'opt-exp-duration'                => '2017 - Present',
+              'opt-exp-designation'             => 'UX Developer',
+              'opt-exp-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.',
             ),
             array(
-              'opt-exp-heading'           => 'Web Development',
-              'opt-exp-icon-class'        => 'ti-paint-bucket icon-lg',
-              'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
+              'opt-exp-duration'                => '2016 - 2017',
+              'opt-exp-designation'             => 'Front-end Developer',
+              'opt-exp-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.',
             ),
             array(
-              'opt-exp-heading'           => 'Digital Marketing',
-              'opt-exp-icon-class'        => 'ti-stats-up icon-lg',
-              'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
-            ),
-            array(
-              'opt-exp-heading'           => 'UI/UX Design',
-              'opt-exp-icon-class'        => 'ti-widget icon-lg',
-              'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
+              'opt-exp-duration'                => '2015 - 2016',
+              'opt-exp-designation'             => 'PHP Developer',
+              'opt-exp-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.',
             ),
           )
         ),
