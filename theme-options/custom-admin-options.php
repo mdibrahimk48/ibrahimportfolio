@@ -329,70 +329,7 @@ CSF::createSection( $prefix, array(
 
 
     //
-    // Field: Create Personal Info & Group
-    //
-
-    array(
-      'id'     => 'opt-personal-info',
-      'type'   => 'fieldset',
-      'title'  => 'Personal Info',
-      'fields' => array(
-        array(
-          'id'      => 'opt-personalinfotitle',
-          'type'    => 'text',
-          'title'   => 'Personal Info Title',
-          'default' => 'Personal Details',
-        ),
-        array(
-          'id'     => 'opt-personalinfogroup',
-          'type'   => 'group',
-          'title'  => __('Personal Info Group', 'ibrahimportfolio'),
-          'button_title'  => __('Add New Info', 'ibrahimportfolio'),
-          'fields' => array(
-            array(
-              'id'        => 'opt-info-title',
-              'type'      => 'text',
-              'title'     => __('Info Title', 'ibrahimportfolio'),
-            ),
-            array(
-              'id'    => 'opt-info-details',
-              'type'  => 'text',
-              'title'  => __('Info Details', 'ibrahimportfolio'),
-            )
-          ),
-          'default' => array(
-            array(
-              'opt-info-title'        => 'Birthdate',
-              'opt-info-details'      => '04/10/1996',
-            ),
-            array(
-              'opt-info-title'        => 'Email',
-              'opt-info-details'      => 'mdibrahimk48@gmail.com',
-            ),
-            array(
-              'opt-info-title'        => 'Mobile',
-              'opt-info-details'      => '01737328916',
-            ),
-            array(
-              'opt-info-title'        => 'Skype',
-              'opt-info-details'      => 'ibrahim.khalil6446',
-            ),
-            array(
-              'opt-info-title'        => 'Github',
-              'opt-info-details'      => 'mdibrahimk48',
-            ),
-            array(
-              'opt-info-title'        => 'Address',
-              'opt-info-details'      => 'Basudebpur, Godagari, Rajshahi',
-            ),
-          )
-        ),
-      )
-    ),
-
-
-    //
-    // Field: Expertise Area group 
+    // Field: Expertise Area group Details
     //
 
     array(
@@ -448,6 +385,70 @@ CSF::createSection( $prefix, array(
               'opt-exp-heading'           => 'UI/UX Design',
               'opt-exp-icon-class'        => 'ti-widget icon-lg',
               'opt-exp-description'       => 'exercitat Repellendus,  corrupt.',
+            ),
+          )
+        ),
+      )
+    ),
+
+
+
+    //
+    // Field: Create Personal Info & Group
+    //
+
+    array(
+      'id'     => 'opt-personal-info',
+      'type'   => 'fieldset',
+      'title'  => 'Personal Info',
+      'fields' => array(
+        array(
+          'id'      => 'opt-personalinfotitle',
+          'type'    => 'text',
+          'title'   => 'Personal Info Title',
+          'default' => 'Personal Details',
+        ),
+        array(
+          'id'     => 'opt-personalinfogroup',
+          'type'   => 'group',
+          'title'  => __('Personal Info Group', 'ibrahimportfolio'),
+          'button_title'  => __('Add New Info', 'ibrahimportfolio'),
+          'fields' => array(
+            array(
+              'id'        => 'opt-info-title',
+              'type'      => 'text',
+              'title'     => __('Info Title', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'    => 'opt-info-details',
+              'type'  => 'text',
+              'title'  => __('Info Details', 'ibrahimportfolio'),
+            )
+          ),
+          'default' => array(
+            array(
+              'opt-info-title'        => 'Birthdate',
+              'opt-info-details'      => '04/10/1996',
+            ),
+            array(
+              'opt-info-title'        => 'Email',
+              'opt-info-details'      => 'mdibrahimk48@gmail.com',
+            ),
+            array(
+              'opt-info-title'        => 'Mobile',
+              'opt-info-details'      => '01737328916',
+            ),
+            array(
+              'opt-info-title'        => 'Skype',
+              'opt-info-details'      => 'ibrahim.khalil6446',
+            ),
+            array(
+              'opt-info-title'        => 'Github',
+              'opt-info-details'      => 'mdibrahimk48',
+            ),
+            array(
+              'opt-info-title'        => 'Address',
+              'opt-info-details'      => 'Basudebpur, Godagari, Rajshahi',
             ),
           )
         ),
