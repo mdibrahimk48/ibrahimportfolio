@@ -1,6 +1,10 @@
 <section class="section" id="resume">
 			<div class="container">
-				<h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+				<?php
+					$config = get_option('_prefix_my_options');
+					$string_converter_resume_heading = $config['opt-resume-heading'];
+				?>
+				<h2 class="mb-5"><span class="text-danger"><?php echo $string_converter_resume_heading['opt-detailstitle1']; ?></span> <?php echo $string_converter_resume_heading['opt-detailstitle2']; ?></h2>
 				<div class="row">
 					<div class="col-md-6 col-lg-4">
 						<div class="card">
