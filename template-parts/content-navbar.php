@@ -8,7 +8,9 @@
 						<?php
 							wp_nav_menu(array(
 								'theme_location' 	=> 'primary',
-								'menu_class' 		=> 'navbar-nav mr-auto nav-item nav-link'
+								'menu_class' 		=> 'navbar-nav mr-auto nav-item'
+								'link_before' 		=> '<span class="nav-link">',
+								'link_after' 		=> '</span>',
 							));
 						?>
 					</ul>
@@ -38,7 +40,7 @@
 						<?php
 							wp_nav_menu(array(
 								'theme_location' 	=> 'secondary',
-								'menu_class' 		=> 'navbar-nav ml-auto nav-item nav-link'
+								'menu_class' 		=> 'navbar-nav ml-auto nav-item'
 							));
 						?>
 					</ul>
