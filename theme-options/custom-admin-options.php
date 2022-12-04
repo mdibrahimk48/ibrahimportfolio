@@ -303,8 +303,6 @@ CSF::createSection( $prefix, array(
   )
 ));
 
-
-
 //
 // Create Resume Section
 //
@@ -320,9 +318,14 @@ CSF::createSection( $prefix, array(
       'title'  => 'Resume Section Heading',
       'fields' => array(
         array(
-          'id'      => 'opt-detailstitle',
+          'id'      => 'opt-detailstitle1',
           'type'    => 'text',
-          'default' => 'My Resume',
+          'default' => 'My',
+        ),
+        array(
+          'id'      => 'opt-detailstitle2',
+          'type'    => 'text',
+          'default' => 'Resume',
         ),
       )
     ),
@@ -343,6 +346,7 @@ CSF::createSection( $prefix, array(
             'title'   => 'Main Area Title',
             'default' => 'My Expertise',
           ),
+          
           array(
             'id'      => 'opt-exp-heading-title',
             'type'    => 'text',
