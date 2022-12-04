@@ -344,13 +344,6 @@ CSF::createSection( $prefix, array(
             'id'      => 'opt-expertisetitle',
             'type'    => 'text',
             'title'   => 'Main Area Title',
-            'default' => 'My Expertise',
-          ),
-          
-          array(
-            'id'      => 'opt-exp-heading-title',
-            'type'    => 'text',
-            'title'   => 'Section Area Title',
             'default' => 'Expertise',
           ),
         array(

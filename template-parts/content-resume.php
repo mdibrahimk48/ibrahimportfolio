@@ -10,22 +10,45 @@
 						<div class="card">
 						<div class="card-header">
 								<div class="mt-2">
-									<h4>Expertise</h4>
+								<?php
+									$string_converter_main_section = $config['opt-heading-title-expertise'];
+									// var_dump($string_converter_main_section);
+								?>
+									<h4><?php echo $string_converter_main_section['opt-expertisetitle']; ?></h4>
 									<span class="line"></span>  
 								</div>
 							</div>
 							<div class="card-body">
-								<h6 class="title text-danger">2017 - Present</h6>
-								<P>UX Developer</P>
-								<P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
-								<hr>
+							<?php
+								if($string_converter_main_section['opt-expertise-group']){
+									foreach($string_converter_main_section['opt-expertise-group'] as $single_array_convert_exp){
+										// var_dump($single_array_convert_exp);
+										?>
+											<h6 class="title text-danger"><?php echo $single_array_convert_exp['opt-exp-duration']; ?></h6>
+											<P><?php echo $single_array_convert_exp['opt-exp-designation']; ?></P>
+											<P class="subtitle"><?php echo $single_array_convert_exp['opt-exp-description-part']; ?></P>
+											<?php  
+													$x = 0;
+
+													while($x <= $single_array_convert_exp) {
+													echo "<hr>";
+													$x++;
+													}
+												
+											?>
+											<!-- <hr> -->
+										<?php
+									}
+								}
+							?>
+								<!-- <hr>
 								<h6 class="title text-danger">2016 - 2017</h6>
 								<P>Front-end Developer</P>
 								<P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
 								<hr>
 								<h6 class="title text-danger">2015 - 2016</h6>
 								<P>UX Designer</P>
-								<P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+								<P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P> -->
 							</div>
 						</div>
 					</div>
