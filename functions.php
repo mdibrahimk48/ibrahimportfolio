@@ -38,6 +38,42 @@ function ibrahimportfolio_setup() {
 		)
 	);
 
+	  // let's add our custom class to the actual List  
+
+	function atg_menu_classes($classes, $item, $args) {
+		if($args->theme_location == 'primary') {
+		  $classes[] = 'nav-item';
+		}
+		return $classes;
+	  }
+	  add_filter('nav_menu_css_class', 'atg_menu_classes', 1, 3);
+
+
+	// let's add "*active*" as a class to the li
+
+	add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+	function special_nav_class($classes, $item){
+		if( in_array('current-menu-item', $classes) ){
+				$classes[] = 'active ';
+		}
+		return $classes;
+	}
+
+
+	// let's add our custom class to the actual link tag    
+
+	function add_additional_class_on_a($classes, $item, $args)
+	{
+		if (isset($args->add_a_class)) {
+			$classes['class'] = $args->add_a_class;
+		}
+		return $classes;
+	}
+
+	add_filter('nav_menu_link_attributes', 'add_additional_class_on_a', 1, 3);
+
+
+
 	add_theme_support(
 		'html5',
 		array(
