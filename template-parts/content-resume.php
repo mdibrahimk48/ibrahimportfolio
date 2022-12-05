@@ -27,16 +27,7 @@
 											<h6 class="title text-danger"><?php echo $single_array_convert_exp['opt-exp-duration']; ?></h6>
 											<P><?php echo $single_array_convert_exp['opt-exp-designation']; ?></P>
 											<P class="subtitle"><?php echo $single_array_convert_exp['opt-exp-description-part']; ?></P>
-											<?php  
-													$x = 0;
-
-													while($x <= $single_array_convert_exp) {
-													echo "<hr>";
-													$x++;
-													}
-												
-											?>
-											<!-- <hr> -->
+											<hr>
 										<?php
 									}
 								}
@@ -136,4 +127,10 @@
 					</div>
 				</div>
 			</div>
-		</section>
+</section>
+
+		<style>
+			hr:last-child {
+				border: none !important;
+			}
+		</style>
