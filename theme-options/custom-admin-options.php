@@ -448,6 +448,66 @@ CSF::createSection( $prefix, array(
       )
     ),
 
+
+    //
+    // Field: Skills and Languages Info & Group
+    //
+
+    array(
+      'id'     => 'opt-heading-title-education',
+      'type'   => 'fieldset',
+      'title'  => 'Education Area Session',
+      'fields' => array(
+          array(
+            'id'      => 'opt-educationtitle',
+            'type'    => 'text',
+            'title'   => 'Main Area Title',
+            'default' => 'Education',
+          ),
+        array(
+          'id'     => 'opt-education-group',
+          'type'   => 'group',
+          'title'  => __('Education Group Area', 'ibrahimportfolio'),
+          'button_title'  => __('Add New Area', 'ibrahimportfolio'),
+          'fields' => array(
+            array(
+              'id'        => 'opt-edu-duration',
+              'type'      => 'text',
+              'title'     => __('Period', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'        => 'opt-edu-degree',
+              'type'      => 'text',
+              'title'     => __('Degree Name', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'    => 'opt-edu-description-part',
+              'type'  => 'textarea',
+              'title'  => __('Education Description', 'ibrahimportfolio'),
+            ),
+          ),
+          'default' => array(
+            array(
+              'opt-edu-duration'                => '2017 - Present',
+              'opt-edu-degree'                  => 'B.E Computer Engineering',
+              'opt-edu-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.',
+            ),
+            array(
+              'opt-edu-duration'                => '2016 - 2017',
+              'opt-edu-degree'                  => 'Diploma in Computer Engineering',
+              'opt-edu-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.',
+            ),
+            array(
+              'opt-edu-duration'                => '2015 - 2016',
+              'opt-edu-degree'                  => 'High School Degree',
+              'opt-edu-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.',
+            ),
+          )
+        ),
+      )
+    ),
+
+  
   )
 ));
 
