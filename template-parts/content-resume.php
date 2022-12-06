@@ -140,23 +140,41 @@
 						<div class="card">
 						<div class="card-header">
 								<div class="pull-left">
-									<h4 class="mt-2">Languages</h4>
+									<?php
+										$string_converter_languages = $config['opt-languages'];
+										//var_dump($string_converter_languages);
+									?>
+									<h4 class="mt-2"><?php echo $string_converter_languages['opt-laguagestitle']; ?></h4>
 									<span class="line"></span>  
 								</div>
 							</div>
 							<div class="card-body pb-2">
+							<!-- Skills Details Loop -->
+							<?php
+								if($string_converter_skills['opt-skills-group']){
+									foreach($string_converter_skills['opt-skills-group'] as $single_array_convert_ski){
+										// var_dump($single_array_convert_lan);
+										?>
+											<h6><?php echo $single_array_convert_ski['opt-skills-title']; ?></h6>
+											<div class="progress mb-3">
+												<div class="progress-bar bg-danger" role="progressbar" style="width: <?php echo $single_array_convert_ski['opt-skills-measurement']; ?>" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										<?php
+									}
+								}
+							?>
 							<h6>English</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<h6>French</h6>
+								<!-- <h6>French</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 								<h6>Spanish</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 67%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 					</div>
