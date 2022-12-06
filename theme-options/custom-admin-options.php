@@ -364,7 +364,7 @@ CSF::createSection( $prefix, array(
             ),
             array(
               'id'    => 'opt-exp-description-part',
-              'type'  => 'text',
+              'type'  => 'textarea',
               'title'  => __('Expertise Description', 'ibrahimportfolio'),
             ),
           ),
@@ -424,15 +424,25 @@ CSF::createSection( $prefix, array(
             ),
             array(
               'id'    => 'opt-edu-description-part',
-              'type'  => 'text',
+              'type'  => 'textarea',
               'title'  => __('Education Description', 'ibrahimportfolio'),
             ),
           ),
           'default' => array(
             array(
               'opt-edu-duration'                => '2017 - Present',
-              'opt-edu-degree'             => 'UX Developer',
-              'opt-edu-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.',
+              'opt-edu-degree'                  => 'B.E Computer Engineering',
+              'opt-edu-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.',
+            ),
+            array(
+              'opt-edu-duration'                => '2016 - 2017',
+              'opt-edu-degree'                  => 'Diploma in Computer Engineering',
+              'opt-edu-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.',
+            ),
+            array(
+              'opt-edu-duration'                => '2015 - 2016',
+              'opt-edu-degree'                  => 'High School Degree',
+              'opt-edu-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.',
             ),
           )
         ),
