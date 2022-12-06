@@ -90,7 +90,7 @@
 								<div class="pull-left">
 								<?php
 									$string_converter_skills = $config['opt-skills'];
-									//var_dump($string_converter_languges);
+									// var_dump($string_converter_skills);
 								?>
 									<h4 class="mt-2"><?php echo $string_converter_skills['opt-skillstitle']; ?></h4>
 									<span class="line"></span>  
@@ -99,23 +99,23 @@
 							<div class="card-body pb-2">
 							<!-- Skills Details Loop -->
 							<?php
-								if($string_converter_edu_main_section['opt-education-group']){
-									foreach($string_converter_edu_main_section['opt-education-group'] as $single_array_convert_edu){
-										// var_dump($single_array_convert_edu);
+								if($string_converter_skills['opt-skills-group']){
+									foreach($string_converter_skills['opt-skills-group'] as $single_array_convert_ski){
+										// var_dump($single_array_convert_lan);
 										?>
-											<h6 class="title text-danger"><?php echo $single_array_convert_edu['opt-edu-duration']; ?></h6>
-											<P><?php echo $single_array_convert_edu['opt-edu-degree']; ?></P>
-											<P class="subtitle"><?php echo $single_array_convert_edu['opt-edu-description-part']; ?></P>
-											<hr>
+											<h6><?php echo $single_array_convert_ski['opt-skills-title']; ?></h6>
+											<div class="progress mb-3">
+												<div class="progress-bar bg-danger" role="progressbar" style="width: <?php echo $single_array_convert_ski['opt-skills-measurement']; ?>" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
 										<?php
 									}
 								}
 							?>
-							<h6>hTL5 &amp; CSS3</h6>
+							<!-- <h6>hTL5 &amp; CSS3</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<!-- <h6>JavaScript</h6>
+								<h6>JavaScript</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
