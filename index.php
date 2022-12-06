@@ -36,12 +36,6 @@ get_header();
 		?>
 		<!--Details Section End-->
 
-		<!--Services Section-->
-		<?php
-			get_template_part('template-parts/content', 'services');
-		?>
-		<!--Services Section End-->
-
 		<!--Pricing Section-->
 		<?php
 			get_template_part('template-parts/content', 'services');
