@@ -31,8 +31,8 @@
 							}
 						}
 						?>
-						<!-- <li><span>Birthdate</span> : 09/13/1996</li> -->
-						<!-- <li><span>Email</span> : info@website.com</li>
+						<!-- <li><span>Birthdate</span> : 09/13/1996</li>
+						<li><span>Email</span> : info@website.com</li>
 						<li><span>Phone</span> : + (123) 456-7890</li>
 						<li><span>Skype</span> : John_Doe </li>
 						<li><span>Address</span> :  12345 Fake ST NoWhere AB Country.</li> -->
