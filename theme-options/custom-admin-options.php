@@ -483,35 +483,87 @@ CSF::createSection( $prefix, array(
           ),
             'default' => array(
               array(
-                'opt-skills-title'          => '2017 - Present',
-                'opt-skills-measurement'    => 'B.E Computer Engineering',
+                'opt-skills-title'          => 'HTML5 & CSS3',
+                'opt-skills-measurement'    => '95%',
               ),
               array(
-                'opt-skills-title'          => '2017 - Present',
-                'opt-skills-measurement'    => 'B.E Computer Engineering',
+                'opt-skills-title'          => 'WordPress Development',
+                'opt-skills-measurement'    => '85%',
               ),
               array(
-                'opt-skills-title'          => '2017 - Present',
-                'opt-skills-measurement'    => 'B.E Computer Engineering',
+                'opt-skills-title'          => 'Theme Development',
+                'opt-skills-measurement'    => '80%',
               ),
               array(
-                'opt-skills-title'          => '2017 - Present',
-                'opt-skills-measurement'    => 'B.E Computer Engineering',
+                'opt-skills-title'          => 'Plugin Development',
+                'opt-skills-measurement'    => '90%',
               ),
               array(
-                'opt-skills-title'          => '2017 - Present',
-                'opt-skills-measurement'    => 'B.E Computer Engineering',
+                'opt-skills-title'          => 'Speed Optimization',
+                'opt-skills-measurement'    => '90%',
               ),
               array(
-                'opt-skills-title'          => '2017 - Present',
-                'opt-skills-measurement'    => 'B.E Computer Engineering',
+                'opt-skills-title'          => 'PHP',
+                'opt-skills-measurement'    => '98%',
               ),
-            ),
+              array(
+                'opt-skills-title'          => 'Technical Support',
+                'opt-skills-measurement'    => '90%',
+              ),
           )
         ),
       )
     ),
 
+    //
+    // Field: Languages Info & Group
+    //
+
+    array(
+      'id'     => 'opt-languages',
+      'type'   => 'fieldset',
+      'title'  => 'Languages Area',
+      'fields' => array(
+          array(
+            'id'      => 'opt-laguagestitle',
+            'type'    => 'text',
+            'title'   => 'Main Area Title',
+            'default' => 'Languages',
+          ),
+        array(
+          'id'            => 'opt-languages-group',
+          'type'          => 'group',
+          'title'         => __('Lanhuages Group Area', 'ibrahimportfolio'),
+          'button_title'  => __('Add New languages', 'ibrahimportfolio'),
+          'fields' => array(
+            array(
+              'id'        => 'opt-languges-title',
+              'type'      => 'text',
+              'title'     => __('Languges Title', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'        => 'opt-languges-measurement',
+              'type'      => 'text',
+              'title'     => __('Languges Measurement', 'ibrahimportfolio'),
+            ),
+          ),
+            'default' => array(
+              array(
+                'opt-languges-title'          => 'Bangla',
+                'opt-languges-measurement'    => '100%',
+              ),
+              array(
+                'opt-languges-title'          => 'English',
+                'opt-languges-measurement'    => '90%',
+              ),
+              array(
+                'opt-languges-title'          => 'Hindi',
+                'opt-languges-measurement'    => '75%',
+              ),
+          )
+        ),
+      )
+    ),
   
   )
 ));

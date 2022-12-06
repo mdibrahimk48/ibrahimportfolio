@@ -88,16 +88,34 @@
 						<div class="card">
 						<div class="card-header">
 								<div class="pull-left">
-									<h4 class="mt-2">Skills</h4>
+								<?php
+									$string_converter_skills = $config['opt-skills'];
+									//var_dump($string_converter_languges);
+								?>
+									<h4 class="mt-2"><?php echo $string_converter_skills['opt-skillstitle']; ?></h4>
 									<span class="line"></span>  
 								</div>
 							</div>
 							<div class="card-body pb-2">
+							<!-- Skills Details Loop -->
+							<?php
+								if($string_converter_edu_main_section['opt-education-group']){
+									foreach($string_converter_edu_main_section['opt-education-group'] as $single_array_convert_edu){
+										// var_dump($single_array_convert_edu);
+										?>
+											<h6 class="title text-danger"><?php echo $single_array_convert_edu['opt-edu-duration']; ?></h6>
+											<P><?php echo $single_array_convert_edu['opt-edu-degree']; ?></P>
+											<P class="subtitle"><?php echo $single_array_convert_edu['opt-edu-description-part']; ?></P>
+											<hr>
+										<?php
+									}
+								}
+							?>
 							<h6>hTL5 &amp; CSS3</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<h6>JavaScript</h6>
+								<!-- <h6>JavaScript</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
@@ -116,7 +134,7 @@
 								<h6>Tempora</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
+								</div> -->
 							</div>
 						</div>
 						<div class="card">
