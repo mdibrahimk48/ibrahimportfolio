@@ -57,13 +57,13 @@
 							</div>
 							<div class="card-body">
 							<?php
-								if($string_converter_edu_main_section['opt-expertise-group']){
-									foreach($string_converter_edu_main_section['opt-expertise-group'] as $single_array_convert_edu){
+								if($string_converter_edu_main_section['opt-education-group']){
+									foreach($string_converter_edu_main_section['opt-education-group'] as $single_array_convert_edu){
 										// var_dump($single_array_convert_edu);
 										?>
-											<h6 class="title text-danger"><?php echo $single_array_convert_edu['opt-exp-duration']; ?></h6>
-											<P><?php echo $single_array_convert_edu['opt-exp-designation']; ?></P>
-											<P class="subtitle"><?php echo $single_array_convert_edu['opt-exp-description-part']; ?></P>
+											<h6 class="title text-danger"><?php echo $single_array_convert_edu['opt-edu-duration']; ?></h6>
+											<P><?php echo $single_array_convert_edu['opt-edu-degree']; ?></P>
+											<P class="subtitle"><?php echo $single_array_convert_edu['opt-edu-description-part']; ?></P>
 											<hr>
 										<?php
 									}
