@@ -146,8 +146,8 @@
 			</div>
 </section>
 
-		<style>
-			hr:last-child {
-				border: none !important;
-			}
-		</style>
+<style>
+	hr:last-child {
+		border: none !important;
+	}
+</style>
