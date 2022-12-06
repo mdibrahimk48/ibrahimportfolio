@@ -396,57 +396,43 @@ CSF::createSection( $prefix, array(
     //
 
     array(
-      'id'     => 'opt-personal-info',
+      'id'     => 'opt-heading-title-education',
       'type'   => 'fieldset',
-      'title'  => 'Personal Info',
+      'title'  => 'Education Area Session',
       'fields' => array(
+          array(
+            'id'      => 'opt-educationtitle',
+            'type'    => 'text',
+            'title'   => 'Main Area Title',
+            'default' => 'Education',
+          ),
         array(
-          'id'      => 'opt-personalinfotitle',
-          'type'    => 'text',
-          'title'   => 'Personal Info Title',
-          'default' => 'Personal Details',
-        ),
-        array(
-          'id'     => 'opt-personalinfogroup',
+          'id'     => 'opt-education-group',
           'type'   => 'group',
-          'title'  => __('Personal Info Group', 'ibrahimportfolio'),
-          'button_title'  => __('Add New Info', 'ibrahimportfolio'),
+          'title'  => __('Education Group Area', 'ibrahimportfolio'),
+          'button_title'  => __('Add New Area', 'ibrahimportfolio'),
           'fields' => array(
             array(
-              'id'        => 'opt-info-title',
+              'id'        => 'opt-edu-duration',
               'type'      => 'text',
-              'title'     => __('Info Title', 'ibrahimportfolio'),
+              'title'     => __('Period', 'ibrahimportfolio'),
             ),
             array(
-              'id'    => 'opt-info-details',
+              'id'        => 'opt-edu-degree',
+              'type'      => 'text',
+              'title'     => __('Degree Name', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'    => 'opt-edu-description-part',
               'type'  => 'text',
-              'title'  => __('Info Details', 'ibrahimportfolio'),
-            )
+              'title'  => __('Education Description', 'ibrahimportfolio'),
+            ),
           ),
           'default' => array(
             array(
-              'opt-info-title'        => 'Birthdate',
-              'opt-info-details'      => '04/10/1996',
-            ),
-            array(
-              'opt-info-title'        => 'Email',
-              'opt-info-details'      => 'mdibrahimk48@gmail.com',
-            ),
-            array(
-              'opt-info-title'        => 'Mobile',
-              'opt-info-details'      => '01737328916',
-            ),
-            array(
-              'opt-info-title'        => 'Skype',
-              'opt-info-details'      => 'ibrahim.khalil6446',
-            ),
-            array(
-              'opt-info-title'        => 'Github',
-              'opt-info-details'      => 'mdibrahimk48',
-            ),
-            array(
-              'opt-info-title'        => 'Address',
-              'opt-info-details'      => 'Basudebpur, Godagari, Rajshahi',
+              'opt-edu-duration'                => '2017 - Present',
+              'opt-edu-degree'             => 'UX Developer',
+              'opt-edu-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.',
             ),
           )
         ),
