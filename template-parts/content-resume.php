@@ -47,12 +47,29 @@
 						<div class="card">
 						<div class="card-header">
 								<div class="mt-2">
-									<h4>Education</h4>
+								<?php
+									$string_converter_edu_main_section = $config['opt-heading-title-education'];
+									// var_dump($string_converter_edu_main_section);
+								?>
+									<h4><?php echo $string_converter_edu_main_section['opt-educationtitle']; ?></h4>
 									<span class="line"></span>  
 								</div>
 							</div>
 							<div class="card-body">
-								<h6 class="title text-danger">2017 - Present</h6>
+							<?php
+								if($string_converter_edu_main_section['opt-expertise-group']){
+									foreach($string_converter_edu_main_section['opt-expertise-group'] as $single_array_convert_edu){
+										// var_dump($single_array_convert_edu);
+										?>
+											<h6 class="title text-danger"><?php echo $single_array_convert_edu['opt-exp-duration']; ?></h6>
+											<P><?php echo $single_array_convert_edu['opt-exp-designation']; ?></P>
+											<P class="subtitle"><?php echo $single_array_convert_edu['opt-exp-description-part']; ?></P>
+											<hr>
+										<?php
+									}
+								}
+							?>
+								<!-- <h6 class="title text-danger">2017 - Present</h6>
 								<P>B.E Computer Engineering</P>
 								<P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error corrupti recusandae obcaecati odit repellat ducimus cum, minus tempora aperiam at.</P>
 								<hr>
@@ -62,7 +79,7 @@
 								<hr>
 								<h6 class="title text-danger">2015 - 2016</h6>
 								<P>High School Degree</P>
-								<P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P>
+								<P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.</P> -->
 								
 							</div>
 						</div>

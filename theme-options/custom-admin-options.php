@@ -390,7 +390,6 @@ CSF::createSection( $prefix, array(
     ),
 
 
-
     //
     // Field: Create Personal Info & Group
     //
