@@ -478,7 +478,7 @@ CSF::createSection( $prefix, array(
             array(
               'id'        => 'opt-skills-measurement',
               'type'      => 'text',
-              'title'     => __('Skills Measurement', 'ibrahimportfolio'),
+              'title'     => __('Skills Measurement (In Percentage)', 'ibrahimportfolio'),
             ),
           ),
             'default' => array(
@@ -544,7 +544,7 @@ CSF::createSection( $prefix, array(
             array(
               'id'        => 'opt-languages-measurement',
               'type'      => 'text',
-              'title'     => __('Languges Measurement', 'ibrahimportfolio'),
+              'title'     => __('Languges Measurement (In Percentage)', 'ibrahimportfolio'),
             ),
           ),
             'default' => array(
