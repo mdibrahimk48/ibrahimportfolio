@@ -537,12 +537,12 @@ CSF::createSection( $prefix, array(
           'button_title'  => __('Add New languages', 'ibrahimportfolio'),
           'fields' => array(
             array(
-              'id'        => 'opt-languges-title',
+              'id'        => 'opt-languages-title',
               'type'      => 'text',
               'title'     => __('Languges Title', 'ibrahimportfolio'),
             ),
             array(
-              'id'        => 'opt-languges-measurement',
+              'id'        => 'opt-languages-measurement',
               'type'      => 'text',
               'title'     => __('Languges Measurement', 'ibrahimportfolio'),
             ),

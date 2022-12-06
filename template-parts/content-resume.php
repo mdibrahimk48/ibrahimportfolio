@@ -101,7 +101,7 @@
 							<?php
 								if($string_converter_skills['opt-skills-group']){
 									foreach($string_converter_skills['opt-skills-group'] as $single_array_convert_ski){
-										// var_dump($single_array_convert_lan);
+										// var_dump($single_array_convert_ski);
 										?>
 											<h6><?php echo $single_array_convert_ski['opt-skills-title']; ?></h6>
 											<div class="progress mb-3">
@@ -149,25 +149,25 @@
 								</div>
 							</div>
 							<div class="card-body pb-2">
-							<!-- Skills Details Loop -->
+							<!-- Languages Details Loop -->
 							<?php
-								if($string_converter_skills['opt-skills-group']){
-									foreach($string_converter_skills['opt-skills-group'] as $single_array_convert_ski){
+								if($string_converter_languages['opt-languages-group']){
+									foreach($string_converter_languages['opt-languages-group'] as $single_array_convert_lan){
 										// var_dump($single_array_convert_lan);
 										?>
-											<h6><?php echo $single_array_convert_ski['opt-skills-title']; ?></h6>
+											<h6><?php echo $single_array_convert_lan['opt-languages-title']; ?></h6>
 											<div class="progress mb-3">
-												<div class="progress-bar bg-danger" role="progressbar" style="width: <?php echo $single_array_convert_ski['opt-skills-measurement']; ?>" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+												<div class="progress-bar bg-danger" role="progressbar" style="width: <?php echo $single_array_convert_lan['opt-languages-measurement']; ?>" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 											</div>
 										<?php
 									}
 								}
 							?>
-							<h6>English</h6>
+							<!-- <h6>English</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<!-- <h6>French</h6>
+								<h6>French</h6>
 								<div class="progress mb-3">
 									<div class="progress-bar bg-danger" role="progressbar" style="width: 45%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
