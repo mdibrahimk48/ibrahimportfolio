@@ -602,24 +602,68 @@ CSF::createSection( $prefix, array(
     ),
 
     array(
-      'id'     => 'opt-footer-team',
+      'id'     => 'opt-project-details-fields',
       'type'   => 'fieldset',
-      'title'  => 'Developer Team',
+      'title'  => 'Project Details',
       'fields' => array(
         array(
-          'id'      => 'opt-devteamname',
+          'id'      => 'opt-project-count',
           'type'    => 'text',
-          'title'   => 'Developer Team Name',
+          'title'   => 'Count',
         ),
         array(
-          'id'      => 'opt-devteamurl',
+          'id'      => 'opt-project-details',
           'type'    => 'text',
-          'title'   => 'Developer Team Site URL',
+          'title'   => 'Details',
         ),
       ),
       'default' => array(
-        'opt-devteamname'    => 'Team Medinova',
-        'opt-devteamurl'     => '#',
+        'opt-project-count'      => '50K',
+        'opt-project-details'     => 'Project Finished',
+      )
+    ),
+
+    array(
+      'id'     => 'opt-client-details-fields',
+      'type'   => 'fieldset',
+      'title'  => 'Client Details',
+      'fields' => array(
+        array(
+          'id'      => 'opt-client-count',
+          'type'    => 'text',
+          'title'   => 'Count',
+        ),
+        array(
+          'id'      => 'opt-client-details',
+          'type'    => 'text',
+          'title'   => 'Details',
+        ),
+      ),
+      'default' => array(
+        'opt-client-count'      => '200K',
+        'opt-client-details'     => 'Happy Clients',
+      )
+    ),
+
+    array(
+      'id'     => 'opt-sclient-details-fields',
+      'type'   => 'fieldset',
+      'title'  => 'Satisfied Clients Details',
+      'fields' => array(
+        array(
+          'id'      => 'opt-sclient-count',
+          'type'    => 'text',
+          'title'   => 'Count',
+        ),
+        array(
+          'id'      => 'opt-sclient-details',
+          'type'    => 'text',
+          'title'   => 'Details',
+        ),
+      ),
+      'default' => array(
+        'opt-sclient-count'      => '2K',
+        'opt-sclient-details'     => 'Happy Clients',
       )
     ),
 
