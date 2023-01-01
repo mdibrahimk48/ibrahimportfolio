@@ -580,30 +580,24 @@ CSF::createSection( $prefix, array(
   'fields' => array(
 
     array(
-      'id'     => 'opt-footer-copyright',
+      'id'     => 'opt-working-details-fields',
       'type'   => 'fieldset',
-      'title'  => 'Site Title',
+      'title'  => 'Working Details',
       'fields' => array(
         array(
-          'id'      => 'opt-sitename',
+          'id'      => 'opt-working-count',
           'type'    => 'text',
-          'title'   => 'Site Name',
+          'title'   => 'Count',
         ),
         array(
-          'id'      => 'opt-year',
+          'id'      => 'opt-working-details',
           'type'    => 'text',
-          'title'   => 'Year',
-        ),
-        array(
-          'id'      => 'opt-url',
-          'type'    => 'text',
-          'title'   => 'Site URL',
+          'title'   => 'Details',
         ),
       ),
       'default' => array(
-        'opt-sitename'    => 'Medinova',
-        'opt-year'        => '2022',
-        'opt-url'         => '#',
+        'opt-working-count'          => '500',
+        'opt-working-details'        => 'Hours Worked',
       )
     ),
 
