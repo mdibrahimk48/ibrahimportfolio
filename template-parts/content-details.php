@@ -40,7 +40,7 @@
 								<div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
 							</div>
 							<div class="col-7 text-left py-3">
-								<h1 class="text-danger font-weight-bold font40">2k</h1>
+								<h1 class="text-danger font-weight-bold font40">2K</h1>
 								<p class="text-light mb-1">Coffee Drinked</p>
 							</div>
 						</div>
