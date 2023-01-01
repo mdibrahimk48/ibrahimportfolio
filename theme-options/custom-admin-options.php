@@ -82,6 +82,7 @@ CSF::createSection( $prefix, array(
 //
 // Create Hero Section
 //
+
 CSF::createSection( $prefix, array(
   'title'  => 'Hero Section',
   'icon'   => 'fas fa-code',
@@ -567,6 +568,69 @@ CSF::createSection( $prefix, array(
   
   )
 ));
+
+
+//
+// Field: fieldset Details
+//
+
+CSF::createSection( $prefix, array(
+  'title'  => 'Details Section',
+  'icon'   => 'far fa-clone',
+  'fields' => array(
+
+    array(
+      'id'     => 'opt-footer-copyright',
+      'type'   => 'fieldset',
+      'title'  => 'Site Title',
+      'fields' => array(
+        array(
+          'id'      => 'opt-sitename',
+          'type'    => 'text',
+          'title'   => 'Site Name',
+        ),
+        array(
+          'id'      => 'opt-year',
+          'type'    => 'text',
+          'title'   => 'Year',
+        ),
+        array(
+          'id'      => 'opt-url',
+          'type'    => 'text',
+          'title'   => 'Site URL',
+        ),
+      ),
+      'default' => array(
+        'opt-sitename'    => 'Medinova',
+        'opt-year'        => '2022',
+        'opt-url'         => '#',
+      )
+    ),
+
+    array(
+      'id'     => 'opt-footer-team',
+      'type'   => 'fieldset',
+      'title'  => 'Developer Team',
+      'fields' => array(
+        array(
+          'id'      => 'opt-devteamname',
+          'type'    => 'text',
+          'title'   => 'Developer Team Name',
+        ),
+        array(
+          'id'      => 'opt-devteamurl',
+          'type'    => 'text',
+          'title'   => 'Developer Team Site URL',
+        ),
+      ),
+      'default' => array(
+        'opt-devteamname'    => 'Team Medinova',
+        'opt-devteamurl'     => '#',
+      )
+    ),
+
+  )
+  ));
 
 
 
