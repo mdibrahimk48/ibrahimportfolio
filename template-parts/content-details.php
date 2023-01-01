@@ -25,8 +25,8 @@
 								<div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
 							</div>
 							<div class="col-7 text-left py-3">
-								<h1 class="text-danger font-weight-bold font40">50K</h1>
-								<p class="text-light mb-1">Project Finished</p>
+								<h1 class="text-danger font-weight-bold font40"><?php echo $string_converter_project_details['opt-project-count']; ?></h1>
+								<p class="text-light mb-1"><?php echo $string_converter_project_details['opt-project-details']; ?></p>
 							</div>
 						</div>
 					</div>
@@ -36,8 +36,8 @@
 								<div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
 							</div>
 							<div class="col-7 text-left py-3">
-								<h1 class="text-danger font-weight-bold font40">200K</h1>
-								<p class="text-light mb-1">Happy Clients</p>
+								<h1 class="text-danger font-weight-bold font40"><?php echo $string_converter_client_details['opt-client-count']; ?></h1>
+								<p class="text-light mb-1"><?php echo $string_converter_client_details['opt-client-details']; ?></p>
 							</div>
 						</div>
 					</div>
@@ -47,8 +47,8 @@
 								<div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
 							</div>
 							<div class="col-7 text-left py-3">
-								<h1 class="text-danger font-weight-bold font40">2K</h1>
-								<p class="text-light mb-1">Coffee Drinked</p>
+								<h1 class="text-danger font-weight-bold font40"><?php echo $string_converter_sclient_details['opt-sclient-count']; ?></h1>
+								<p class="text-light mb-1"><?php echo $string_converter_sclient_details['opt-sclient-details']; ?></p>
 							</div>
 						</div>
 					</div>

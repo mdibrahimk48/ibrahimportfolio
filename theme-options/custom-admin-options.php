@@ -663,7 +663,7 @@ CSF::createSection( $prefix, array(
       ),
       'default' => array(
         'opt-sclient-count'      => '2K',
-        'opt-sclient-details'     => 'Happy Clients',
+        'opt-sclient-details'     => 'Project Loved',
       )
     ),
 
