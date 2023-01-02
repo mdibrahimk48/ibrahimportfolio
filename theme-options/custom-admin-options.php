@@ -680,90 +680,22 @@ CSF::createSection( $prefix, array(
   'fields' => array(
 
     array(
-      'id'     => 'opt-working-details-fields',
+      'id'     => 'opt-services-heading',
       'type'   => 'fieldset',
-      'title'  => 'Working Details',
+      'title'  => 'Services Heading',
       'fields' => array(
         array(
-          'id'      => 'opt-working-count',
+          'id'      => 'opt-services-heading1',
           'type'    => 'text',
-          'title'   => 'Count',
         ),
         array(
-          'id'      => 'opt-working-details',
+          'id'      => 'opt-services-heading2',
           'type'    => 'text',
-          'title'   => 'Details',
         ),
       ),
       'default' => array(
-        'opt-working-count'          => '500',
-        'opt-working-details'        => 'Hours Worked',
-      )
-    ),
-
-    array(
-      'id'     => 'opt-project-details-fields',
-      'type'   => 'fieldset',
-      'title'  => 'Project Details',
-      'fields' => array(
-        array(
-          'id'      => 'opt-project-count',
-          'type'    => 'text',
-          'title'   => 'Count',
-        ),
-        array(
-          'id'      => 'opt-project-details',
-          'type'    => 'text',
-          'title'   => 'Details',
-        ),
-      ),
-      'default' => array(
-        'opt-project-count'      => '50K',
-        'opt-project-details'     => 'Project Finished',
-      )
-    ),
-
-    array(
-      'id'     => 'opt-client-details-fields',
-      'type'   => 'fieldset',
-      'title'  => 'Client Details',
-      'fields' => array(
-        array(
-          'id'      => 'opt-client-count',
-          'type'    => 'text',
-          'title'   => 'Count',
-        ),
-        array(
-          'id'      => 'opt-client-details',
-          'type'    => 'text',
-          'title'   => 'Details',
-        ),
-      ),
-      'default' => array(
-        'opt-client-count'      => '200K',
-        'opt-client-details'     => 'Happy Clients',
-      )
-    ),
-
-    array(
-      'id'     => 'opt-sclient-details-fields',
-      'type'   => 'fieldset',
-      'title'  => 'Satisfied Clients Details',
-      'fields' => array(
-        array(
-          'id'      => 'opt-sclient-count',
-          'type'    => 'text',
-          'title'   => 'Count',
-        ),
-        array(
-          'id'      => 'opt-sclient-details',
-          'type'    => 'text',
-          'title'   => 'Details',
-        ),
-      ),
-      'default' => array(
-        'opt-sclient-count'      => '2K',
-        'opt-sclient-details'     => 'Project Loved',
+        'opt-services-heading1'        => 'My',
+        'opt-services-heading2'        => 'Services',
       )
     ),
 
