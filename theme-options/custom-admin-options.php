@@ -705,34 +705,26 @@ CSF::createSection( $prefix, array(
     //
 
     array(
-      'id'            => 'opt-languages-group',
+      'id'            => 'opt-services-group',
       'type'          => 'group',
-      'title'         => __('Lanhuages Group Area', 'ibrahimportfolio'),
+      'title'         => __('Services Group Area', 'ibrahimportfolio'),
       'button_title'  => __('Add New Services', 'ibrahimportfolio'),
       'fields' => array(
         array(
-          'id'        => 'opt-languages-title',
+          'id'        => 'opt-services-title',
           'type'      => 'text',
-          'title'     => __('Languges Title', 'ibrahimportfolio'),
+          'title'     => __('Services Title', 'ibrahimportfolio'),
         ),
         array(
-          'id'        => 'opt-languages-measurement',
-          'type'      => 'text',
-          'title'     => __('Languges Measurement (In Percentage)', 'ibrahimportfolio'),
+          'id'        => 'opt-services-details',
+          'type'      => 'textarea',
+          'title'     => __('Services Details', 'ibrahimportfolio'),
         ),
       ),
         'default' => array(
           array(
-            'opt-languges-title'          => 'Bangla',
-            'opt-languges-measurement'    => '100%',
-          ),
-          array(
-            'opt-languges-title'          => 'English',
-            'opt-languges-measurement'    => '90%',
-          ),
-          array(
-            'opt-languges-title'          => 'Hindi',
-            'opt-languges-measurement'    => '75%',
+            'opt-services-title'          => 'Ullam',
+            'opt-services-details'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.',
           ),
       )
     ),
