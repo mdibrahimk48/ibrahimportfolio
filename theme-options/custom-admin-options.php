@@ -711,6 +711,11 @@ CSF::createSection( $prefix, array(
       'button_title'  => __('Add New Services', 'ibrahimportfolio'),
       'fields' => array(
         array(
+          'id'        => 'opt-services-icon-class',
+          'type'      => 'text',
+          'title'     => __('Services Icon Class', 'ibrahimportfolio'),
+        ),
+        array(
           'id'        => 'opt-services-title',
           'type'      => 'text',
           'title'     => __('Services Title', 'ibrahimportfolio'),
@@ -723,26 +728,32 @@ CSF::createSection( $prefix, array(
       ),
         'default' => array(
           array(
+            'opt-services-icon-class'     => 'ti-vector text-danger',
             'opt-services-title'          => 'Ullam',
             'opt-services-details'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.',
           ),
           array(
+            'opt-services-icon-class'     => 'ti-write text-danger',
             'opt-services-title'          => 'Asperiores',
             'opt-services-details'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.',
           ),
           array(
+            'opt-services-icon-class'     => 'ti-package text-danger',
             'opt-services-title'          => 'Tempora',
             'opt-services-details'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.',
           ),
           array(
+            'opt-services-icon-class'     => 'ti-map-alt text-danger',
             'opt-services-title'          => 'Provident',
             'opt-services-details'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.',
           ),
           array(
+            'opt-services-icon-class'     => 'ti-bar-chart text-danger',
             'opt-services-title'          => 'Consectetur',
             'opt-services-details'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.',
           ),
           array(
+            'opt-services-icon-class'     => 'ti-support text-danger',
             'opt-services-title'          => 'Veritatis',
             'opt-services-details'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.',
           ),

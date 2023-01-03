@@ -1,10 +1,28 @@
 <section class="section" id="service">
 			<div class="container">
-				<h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+			<?php
+				$config = get_option('_prefix_my_options');
+				$string_converter_services_heading = $config['opt-services-heading'];
+			?>
+				<h2 class="mb-5 pb-4"><span class="text-danger"><?php echo $string_converter_services_heading['opt-services-heading1']; ?></span> <?php echo $string_converter_services_heading['opt-services-heading2']; ?></h2>
 				<div class="row">
 					<div class="col-md-4 col-sm-6">
 						<div class="card mb-5">
 						<div class="card-header has-icon">
+						<!-- Services Details Loop -->
+							<?php
+								if($string_converter_languages['opt-languages-group']){
+									foreach($string_converter_languages['opt-languages-group'] as $single_array_convert_lan){
+										// var_dump($single_array_convert_lan);
+										?>
+											<h6><?php echo $single_array_convert_lan['opt-languages-title']; ?></h6>
+											<div class="progress mb-3">
+												<div class="progress-bar bg-danger" role="progressbar" style="width: <?php echo $single_array_convert_lan['opt-languages-measurement']; ?>" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											</div>
+										<?php
+									}
+								}
+							?>
 								<i class="ti-vector text-danger" aria-hidden="true"></i>
 							</div>
 							<div class="card-body px-4 py-3">
