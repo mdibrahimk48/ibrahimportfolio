@@ -8,9 +8,9 @@
 				<div class="row">
 					<!-- Services Details Loop -->
 							<?php
-								if($string_converter_services_heading['opt-services-group']){
-									foreach($string_converter_services_heading['opt-services-group'] as $single_array_convert_services){
-										var_dump($single_array_convert_services);
+								if($string_converter_services_heading = $config['opt-services-group']){
+									foreach($string_converter_services_heading = $config['opt-services-group'] as $single_array_convert_services){
+										// var_dump($single_array_convert_services);
 										?>
 											<div class="col-md-4 col-sm-6">
 												<div class="card mb-5">
