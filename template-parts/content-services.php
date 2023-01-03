@@ -11,24 +11,20 @@
 						<div class="card-header has-icon">
 						<!-- Services Details Loop -->
 							<?php
-								if($string_converter_languages['opt-languages-group']){
-									foreach($string_converter_languages['opt-languages-group'] as $single_array_convert_lan){
+								if($string_converter_services_heading['opt-services-group']){
+									foreach($string_converter_services_heading['opt-services-group'] as $single_array_convert_services){
 										// var_dump($single_array_convert_lan);
 										?>
-											<h6><?php echo $single_array_convert_lan['opt-languages-title']; ?></h6>
-											<div class="progress mb-3">
-												<div class="progress-bar bg-danger" role="progressbar" style="width: <?php echo $single_array_convert_lan['opt-languages-measurement']; ?>" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+											<i class="<?php echo $single_array_convert_services['opt-services-icon-class']; ?>" aria-hidden="true"></i>
+											</div>
+											<div class="card-body px-4 py-3">
+												<h5 class="mb-3 card-title text-dark"><?php echo $single_array_convert_services['opt-languages-title']; ?></h5>
+												<P class="subtitle"><?php echo $single_array_convert_services['opt-languages-title']; ?></P>
 											</div>
 										<?php
 									}
 								}
 							?>
-								<i class="ti-vector text-danger" aria-hidden="true"></i>
-							</div>
-							<div class="card-body px-4 py-3">
-								<h5 class="mb-3 card-title text-dark">Ullam</h5>
-								<P class="subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam commodi provident, dolores reiciendis enim pariatur error optio, tempora ex, nihil nesciunt! In praesentium sunt commodi, unde ipsam ex veritatis laboriosam dolor asperiores suscipit blanditiis, dignissimos quos nesciunt nulla aperiam officia.</P>
-							</div>
 						</div>
 					</div>
 					<div class="col-md-4 col-sm-6">
