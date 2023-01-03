@@ -699,6 +699,65 @@ CSF::createSection( $prefix, array(
       )
     ),
 
+    //
+    // Field: Services Area group Details
+    //
+
+    array(
+      'id'     => 'opt-heading-title-expertise',
+      'type'   => 'fieldset',
+      'title'  => 'Expertise Area Session',
+      'fields' => array(
+          array(
+            'id'      => 'opt-expertisetitle',
+            'type'    => 'text',
+            'title'   => 'Main Area Title',
+            'default' => 'Expertise',
+          ),
+        array(
+          'id'     => 'opt-expertise-group',
+          'type'   => 'group',
+          'title'  => __('Expertise Group Area', 'ibrahimportfolio'),
+          'button_title'  => __('Add New Area', 'ibrahimportfolio'),
+          'fields' => array(
+            array(
+              'id'        => 'opt-exp-duration',
+              'type'      => 'text',
+              'title'     => __('Working Duration', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'        => 'opt-exp-designation',
+              'type'      => 'text',
+              'title'     => __('Designation/Role', 'ibrahimportfolio'),
+            ),
+            array(
+              'id'    => 'opt-exp-description-part',
+              'type'  => 'textarea',
+              'title'  => __('Expertise Description', 'ibrahimportfolio'),
+            ),
+          ),
+          'default' => array(
+            array(
+              'opt-exp-duration'                => '2017 - Present',
+              'opt-exp-designation'             => 'UX Developer',
+              'opt-exp-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.',
+            ),
+            array(
+              'opt-exp-duration'                => '2016 - 2017',
+              'opt-exp-designation'             => 'Front-end Developer',
+              'opt-exp-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.',
+            ),
+            array(
+              'opt-exp-duration'                => '2015 - 2016',
+              'opt-exp-designation'             => 'PHP Developer',
+              'opt-exp-description-part'        => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum recusandae, cupiditate ullam dolor ratione repellendus.aliquid repudiandae saepe!.',
+            ),
+          )
+        ),
+      )
+    ),
+  
+
   )
   ));
 
